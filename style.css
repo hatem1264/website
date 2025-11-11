@@ -22,11 +22,22 @@ body {
     line-height: 1.7;
 }
 
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .container {
     display: flex;
     flex-direction: column; /* Default to column for mobile-first */
     max-width: 1400px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 /* Sidebar styles */
@@ -38,6 +49,8 @@ body {
     border-bottom: 1px solid var(--border-color);
     padding: 20px;
     box-sizing: border-box;
+    background-color: rgba(28, 28, 34, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 .profile-img {
@@ -227,6 +240,8 @@ body {
     padding: 30px;
     border-radius: 8px;
     border: 1px solid var(--border-color);
+    background-color: rgba(40, 40, 48, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 .content h2, .content h3 {
