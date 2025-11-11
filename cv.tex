@@ -1,0 +1,609 @@
+\documentclass[french,a4paper,11pt]{article}
+\usepackage{biblatex}
+\usepackage{academicons}
+\usepackage{parskip}
+\usepackage{hologo}
+\usepackage{fontspec}
+\usepackage{biblatex} %Imports biblatex package
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{arydshln} % for dashed lines
+\usepackage{yhmath}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage[french]{babel}
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%Setup hyperref package, and colours for links
+% \usepackage[unicode, draft=false]{hyperref}
+\usepackage[pdftex,colorlinks=true,linkcolor=blue,citecolor=red,urlcolor=darkgray]{hyperref}
+\addbibresource{references_mandey.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty}
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C}\Huge{\textbf{ZAYENI Hatem}}|\large{curriculum vitae}
+\\ [6pt]
+\\
+\\
+\textcolor[HTML]{371e77}{$|$\underline{\href{mailto:hatem.zayeni@unicaen.fr}{\raisebox{-0.05\height}{\faEnvelope} hatem.zayeni@unicaen.fr}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{mailto:hatem.zayeni@enit.utm.tn}{\raisebox{-0.05\height}{\faEnvelope} hatem.zayeni@enit.utm.tn}} $|$}
+\textcolor[HTML]{371e77}{\href{tel:+33759896321}{\underline{\raisebox{-0.05\height}{\faMobile} +33759896321}}$|$}
+% \textcolor[HTML]{371e77}{\underline{\href{https://www.mathworks.com/matlabcentral/profile/authors/12778700-hatem-zayani?s_tid=gn_comm}{\raisebox{-0.05\height}{$\mathcal{M}$} Mathworks Link}} $|$}
+\textcolor[HTML]{371e77}{$|$\underline{\href{https://github.com/hatem1264}{\raisebox{-0.05\height}{\faGithub} Github Link}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://www.linkedin.com/in/zayeni-hatem-51ab61101/}{\raisebox{-0.05\height}{\faLinkedin} Linkedin Link}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://scholar.google.com/citations?user=fLQWpKAAAAAJ&hl=fr&oi=ao}{\raisebox{-0.05\height}{\faGoogle} Scholar Link}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://orcid.org/my-orcid?orcid=0000-0002-5217-9618}
+{\raisebox{-0.05\height}{\aiOrcid} ORCID Id: 0000-0002-5217-9618}}$|$}\\
+\
+\\
+\textcolor[HTML]{371e77}{\underline{\href{https://lmno.unicaen.fr/}
+{\raisebox{-0.05\height}{\faMapMarker}
+Adresse : Laboratoire de mathématiques Nicolas Oresme LMNO
+}}}\\
+Département de mathématiques et informatique,
+     UFR des sciences,\\
+     Université de Caen Normandie,
+    14032 CAEN cedex 5.
+\end{tabularx}
+\vspace{0.25cm}
+\section{{\faStackExchange} \textbf{Profil académique et scientifique}}\vspace{0.25cm}
+Docteur en mathématiques appliquées, je suis spécialisé dans la régularisation des problèmes inverses mal posés et le développement d'outils numériques pour les résoudre. Par ailleurs,
+depuis l'obtention de mon doctorat, je m'engage activement dans l'exploration et le développement de compétences en Intelligence Artificielle (IA) appliquée aux problèmes de modélisation mathématique. Enfin, mon parcours, bien qu'international, témoigne d'une solide maîtrise des méthodes pédagogiques adaptées au système universitaire français, renforcée par mon poste actuel d’A.T.E.R. (\textit{Attaché Temporaire d’Enseignement et de Recherche}) à l’Université de Caen-Normandie. En résumé, mon quotidien allie recherche scientifique et enseignement universitaire, avec pour objectif de contribuer à des projets interdisciplinaires combinant
+modélisation mathématique, programmation scientifique et pédagogie.
+\vspace{0.25cm}
+\section{{\faGraduationCap} \textbf{Formation académique}}\vspace{0.25cm}
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-2.5cm}}r }
+\color[HTML]{1C033C} \textbf{{\faThList} Doctorat : Mathématiques appliquées} (mention : très honorable) &  \hfill \color[HTML]{371e77} \textbf{ Déc. 2023} \\
+\color[HTML]{371e77} ENIT : \uline{\href{https://enit.rnu.tn/}{École Nationale d'Ingénieurs de Tunis}} et {UNICAEN : \uline{\href{https://ufr-sciences.unicaen.fr/}{UFR des sciences – Université de Caen Normandie}}}\vspace{0.25cm}\\
+\end{tabularx}
+\textbf{Laboratoires de thèse :}\vspace{0.25cm}\\
+{\color[HTML]{761E31}\textbf{LAMSIN} : Laboratoire de Modélisation Mathématique et Numérique dans les Sciences de l'Ingénieur, ENIT.}\\
+{\color[HTML]{761E31}\textbf{LMNO} : Laboratoire de Mathématiques Nicolas Oresme, UNICAEN}.\vspace{0.25cm}\\
+\textbf{Sujet de la thèse :}
+\begin{center}
+\textbf{\textit{<< Data assimilation and boundary data completion for the Stokes system and applications >>}}
+\end{center}
+Soutenue le 14 décembre 2023 devant le jury composé de :\\
+\begin{center}
+\begin{tabular}{|llll|}
+M. Maher MOAKHER & Professeur, ENIT& Tunisie & Président \\
+M. Liviu MARIN & Professeur, Université de Bucarest& Roumanie& Rapporteur \\
+M. Khaled OMRANI & Professeur, IPEIEM& Tunisie & Rapporteur \\
+M. Moncef MAHJOUB & Maître de Conférences, ENIT& Tunisie & Examinateur \\
+Mme. Amel BEN ABDA & Professeure, ENIT& Tunisie & Directrice de thèse \\
+M. Franck DELVARE & Professeur, UNICAEN& France & Co-directeur de thèse \\
+Mme. Faten KHAYAT & Maître de Conférences, INSAT& Tunisie & Co-directrice de thèse
+\end{tabular}
+\end{center}
+\section{}
+\vspace{0.25cm}
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{1cm}}r }
+\color[HTML]{1C033C} \textbf{{\faThList} M2 : Mathématiques}
+ (major : moyenne de 13,3) &  \hfill \color[HTML]{371e77} \textbf{ Juin 2020} \\
+\color[HTML]{371e77} ENIT: {\uline{\href{https://enit.rnu.tn/}{École Nationale d'Ingénieurs de Tunis}}}&  \hfill \color[HTML]{4B28A4} \href{https://www.mastere-m2cs.lamsin.tn/}{\textit{\textbf{Modélisation mathématique et calcul scientifique}}}\vspace{0.25cm}\\
+\end{tabularx}
+{\color[HTML]{761E31}\textbf{Stage de mémoire de master au LAMSIN}} :\vspace{0.25cm}
+\\
+\textbf{Sujet :}
+\begin{center}
+\textbf{\textit{<< Identification numérique d'un coefficient de Robin pour le problème de Stokes en utilisant la méthode de Levenberg-Marquardt >>}}
+\end{center}
+\vspace{0.25cm}
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{3cm}}r }
+\color[HTML]{1C033C} \textbf{{\faThList} M1 : Mathématiques appliquées} &  \hfill \color[HTML]{371e77}\textbf{  Juin 2018} \\
+\color[HTML]{371e77} FST : {\uline{\href{https://fst.rnu.tn/fr}{Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis }}} &  \hfill \color[HTML]{4B28A4} \textit{\textbf{ }}
+\end{tabularx}
+\vspace{0.25cm}
+\section{}
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{5.5cm}}r }
+\color[HTML]{1C033C} \textbf{{\faThList} Licence : Mathématiques fondamentales et appliquées} &  \hfill \color[HTML]{371e77} \textbf{ Juin 2017} \\
+\color[HTML]{371e77} FST &  \hfill \color[HTML]{4B28A4} \textit{\textbf{  }}\\
+\vspace{0.25cm}\\
+\color[HTML]{1C033C} \textbf{{\faThList} Baccalauréat : S spécialité « sciences mathématiques »} &  \hfill \color[HTML]{371e77}  \textbf{Juin 2013} \\
+\color[HTML]{371e77} Tunisie &  \hfill \color[HTML]{4B28A4} \textit{\textbf{}}\\
+\end{tabularx}
+\vspace{0.25cm}
+\section{{\faLanguage} \textbf{Langues}}\vspace{0.25cm}
+\hspace*{4ex} {\color[HTML]{1C033C}\textbf{{\faBuysellads} Français :}} lu, écrit et parlé,
+\hspace*{4ex} {\color[HTML]{1C033C}\textbf{{\faBuysellads} Anglais :}} lu, écrit et parlé,
+\hspace*{4ex} {\color[HTML]{1C033C}\textbf{{\faBuysellads} Arabe :}} lu, écrit et parlé.
+\vspace{0.25cm}
+\section{{\faLaptop} \textbf{Compétences en Informatique \& Calcul Scientifique}}\vspace{0.25cm}
+{\color[HTML]{1C033C}\textbf{{\faCogs} Informatique/Bureautique \& Outils :}} \\[2pt]
+{\color[HTML]{761E31} \hspace*{4ex}{\faLinux} Linux, {\faWindows} Windows, {\faGit} Git, {\faGithub } GitHub, {\faWordpress } Microsoft Office, {\faLeaf} LATEX}\\[3pt]
+{\color[HTML]{1C033C}\textbf{{\faCode} Langages de Programmation :}}\\[2pt]
+{\color[HTML]{761E31} \hspace*{4ex}{\faPython} python, C, C++, MATLAB, FreeFem et {\faRegistered} R :}
+\\[3pt]
+\hspace*{4ex}\href{https://fenicsproject.org/}{\textbf{FEniCS}} : paquet de simulation par éléments finis basé sur Python.\\[3pt]
+ \hspace*{4ex}\href{https://getfem.org/}{\textbf{GetFEM}} : paquet de simulation par éléments finis basé sur Python.\\[3pt]
+ \hspace*{4ex}\href{https://www.firedrakeproject.org/}{\textbf{Firedrake}} : paquet de simulation par éléments finis basé sur Python.\\[3pt]
+ \hspace*{4ex}\href{https://hippylib.github.io/}{\textbf{hIPPYlib}} : boîte à outils basée sur FEniCS pour résoudre des problèmes inverses déterministes\\ \hspace*{4ex} et bayésiens gouvernés par des EDP. \\[3pt]
+ \hspace*{4ex}\href{https://hippylib.github.io/}{\textbf{pyadjoint}} : cadre de différentiation algorithmique par surcharge d'opérateur pour Python. Il est utilisé\\
+ \hspace*{4ex}comme base pour les capacités de modèle adjoint automatique et linéaire tangent de FEniCS et Firedrake. \\[3pt]
+ \hspace*{4ex}\href{https://freefem.org/}{\textbf{FreeFEM}} : solveur PDE par éléments finis avec langage spécifique au domaine intégré. \\[3pt]
+ \hspace*{4ex}\href{https://freefem.org/}{\textbf{R Statistiques}} : le projet R pour le Calcul Statistique. \\[3pt]
+ \hspace*{4ex}\href{https://gmsh.info/}{\textbf{Gmsh}} : générateur de maillage par éléments finis en trois dimensions avec des installations de pré- et\\
+ \hspace*{4ex} post-traitement intégrées.\\
+  \hspace*{4ex}\href{https://github.com/nschloe/meshio}{\textbf{meshio}} : paquet générateur de maillage Python.\\
+{\color[HTML]{1C033C}\textbf{{\faConnectdevelop} IA : Outils d'Intelligence Artificielle} (débutant)} : \\[2pt]
+ \hspace*{4ex} \href{https://www.tensorflow.org}{\textbf{TensorFlow}}, \href{https://scikit-learn.org/stable/}{\textbf{Scikit} \textbf{Learn}}, \href{https://pytorch.org/}{\textbf{PyTorch}}, \href{https://keras.io/}{\textbf{Keras}}.
+\\[3pt]
+{\color[HTML]{1C033C}\textbf{{\faLowVision} Visualisation :}}\\[2pt]
+\hspace*{4ex}\href{http://www.gnuplot.info/}{\textbf{Gnuplot}} : utilitaire de graphiques portable commandé en ligne de commande.\\[3pt]
+ \hspace*{4ex}\href{https://www.paraview.org/}{\textbf{ParaView}} : logiciel multiplateforme open source pour la visualisation scientifique interactive. \\ [3pt]
+
+\section{{\faFile} \textbf{Certifications}}\vspace{0.25cm}
+
+\begin{tabularx}{\linewidth}{@{}l @{\hspace{-1cm}}r }
+\hspace*{2ex} \textbf{{\faWpforms} \textit{Career Track: Data Scientist in Python}} &\hfill \color[HTML]{371e77}DataCamp, Inc. 2025 \uline{\href{https://app.datacamp.com/learn/career-tracks/data-scientist-in-python}{ En cours}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Getting Started with Deep Learning} &\hfill \color[HTML]{371e77}NVIDIA, Inc. 2024 \uline{\href{https://courses.nvidia.com/certificates/ccc70e992afb40e38cb307c6e8324f11/}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Introduction to Physics-informed Machine Learning with Modulus} &\hfill \color[HTML]{371e77} NVIDIA, Inc. 2024 \uline{\href{}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Disaster Risk Monitoring Using Satellite Imagery} &\hfill \color[HTML]{371e77} NVIDIA, Inc. 2024 \uline{\href{}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} FIDLE : Introduction au Deep Learning CNRS} &\hfill \color[HTML]{371e77} CNRS, Inc. 2024 \uline{\href{https://drive.google.com/drive/folders/1LrWPpz5ZlLv8hl-9al_GywEARX4DWa-r?usp=sharing}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Intermediate Importing Data in Python} &\hfill \color[HTML]{371e77} DataCamp, Inc. 2024 \uline{\href{https://drive.google.com/file/d/185CzP1I0bNkgnHpqquioOr54sw2MIRXb/view?usp=sharing}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Preprocessing for Machine Learning in
+Python} &\hfill \color[HTML]{371e77} DataCamp, Inc. 2024 \uline{\href{https://drive.google.com/file/d/1LvHHRfS1Of3vV-35Pzh3xGhcOGX9MRn6/view?usp=sharing}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Developing Python Packages} &\hfill \color[HTML]{371e77} DataCamp, Inc. 2024 \uline{\href{https://drive.google.com/file/d/1G4wpIRbtt1-KpX7lCLB25i41twC9Ndc7/view?usp=sharing}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Machine Learning for Business
+} &\hfill \color[HTML]{371e77} DataCamp, Inc. 2024 \uline{\href{https://drive.google.com/file/d/1Elr2ZwEXAzw1DmBoW0k1my5sw4Vms21E/view?usp=sharing}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Python for Scientists and Engineers} &\hfill \color[HTML]{371e77} Educative, Inc. 2022 \uline{\href{https://www.educative.io/verify-certificate/Bg5WvwFAnOrAO3pXMIvEX85kWE8rIy}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Massai
+on Artificial Intelligence} &\hfill \color[HTML]{371e77} Esprit, Inc. 2022 \uline{\href{https://massai.esprit.tn/AISummerSchool/schedule}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Connecting to a MongoDB Database} &\hfill \color[HTML]{371e77} MongoDB, Inc. 2022 \uline{\href{https://learn.mongodb.com/c/u0ZTHjcyRRe8nZxfJRLl3A}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Getting Started with MongoDB Atlas} &\hfill \color[HTML]{371e77} MongoDB, Inc. 2022 \uline{\href{https://learn.mongodb.com/c/nGk2d-QLSs6u4At-zF1xWA}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} MongoDB CRUD Operations : Insert and Find Documents} &\hfill \hspace*{4ex}\color[HTML]{371e77} MongoDB, Inc. 2022 \uline{\href{https://learn.mongodb.com/c/IWnVmbkTS32lBB4lrKfALQ}{Certification ID}} \\
+\hspace*{2ex} \textbf{{\faWpforms} Overview of MongoDB and the Document Model} &\hfill \color[HTML]{371e77} MongoDB, Inc. 2022 \uline{\href{https://learn.mongodb.com/c/pPQIZ7SNSFu3FfGf_Hx7fw}{Certification ID}} \\
+\end{tabularx}
+\vspace{0.25cm}
+\newpage
+\section{{\faSearch}\textbf{Thèmes de recherche}}\vspace{0.5cm}
+{\color[HTML]{1C033C} \textbf{\uline{\href{}{{\faSearchPlus } THÈME 1 : PROBLÈMES INVERSES}}}}\vspace{0.25cm}\\[4pt]
+{\color[HTML]{371e77}\textbf{(1)} \textbf{Assimilation de données dans les modèles mathématiques :}}
+l'assimilation de données \textit{(Data Assimilation, DA)} est un outil puissant des mathématiques appliquées qui combine des données d’observation avec des modèles mathématiques pour améliorer la précision des prédictions et des simulations. Elle joue un rôle essentiel dans l’étude de systèmes complexes et dynamiques dans des domaines tels que la météorologie, la géophysique, la géomagnétique, l’océanographie, les sciences de l’environnement et la tomographie photoacoustique (PAT). En intégrant des données d’observation réelles dans les modèles, l’assimilation de données permet d’affiner les prédictions et d'améliorer la compréhension des systèmes dynamiques. Cela favorise une prise de décision éclairée dans un large éventail de disciplines scientifiques et d’ingénierie.
+
+{\color[HTML]{371e77}\textbf{(2)}
+\textbf{Complétion de données dans les modèles mathématiques :}}
+les problèmes de complétion de données se rencontrent dans de nombreux domaines de la physique, tels que la thermique, la mécanique et l'électrostatique. Ils apparaissent également dans les essais non destructifs, où l’objectif est d’obtenir des informations inaccessibles directement par la mesure. Les projets de recherche auxquels nous participons incluent l’application de méthodes inverses pour résoudre ces problèmes de complétion de données, ainsi que leur implémentation numérique à l’aide de diverses techniques, telles que la méthode des éléments finis, les équations intégrales de frontière ou la méthode de la solution fondamentale. Ces approches sont appliquées à des problématiques variées, telles que l’identification simultanée de paramètres, ainsi que la détection de fissures et de sources.
+
+{\color[HTML]{371e77}\textbf{(3)} \textbf{Identification de paramètres dans les modèles mathématiques :}}
+l'identification de paramètres concerne le processus de détermination des paramètres inconnus d'un modèle mathématique à partir de données observées ou de mesures expérimentales. Dans de nombreux domaines scientifiques et techniques, des modèles mathématiques sont utilisés pour décrire le comportement de systèmes ou de processus. Ces modèles contiennent souvent des paramètres non précisément connus, qui doivent être estimés à partir des données disponibles. Le problème d'identification de paramètres consiste donc à déterminer les valeurs de ces paramètres de manière à ce que le modèle mathématique corresponde le mieux possible aux données observées ou aux résultats expérimentaux. Ce processus implique généralement l’utilisation de techniques d’optimisation, de méthodes statistiques ou d’algorithmes d’inférence pour trouver les valeurs des paramètres qui minimisent la différence entre les prédictions du modèle et les données observées, cette différence étant souvent quantifiée par une fonction objective ou une mesure d’erreur appropriée.
+\vspace{0.75cm}\\
+{\color[HTML]{1C033C} \textbf{\uline{\href{}{{\faSearchPlus} THÈME 2 : \MakeUppercase{Modélisation Mathématique et Calculs Scientifiques}}}}}\vspace{0.25cm}\\[4pt]
+{\color[HTML]{371e77}\textbf{(1)} \textbf{La modélisation mathématique :}}
+la modélisation mathématique consiste à créer des représentations mathématiques de systèmes ou de phénomènes du monde réel dans le but d’acquérir des connaissances, de faire des prédictions ou de résoudre des problèmes. Ce processus implique généralement la formulation d’équations, d’algorithmes ou de procédures informatiques qui décrivent le comportement ou la dynamique du système étudié. Les modèles mathématiques peuvent varier, allant de simples équations analytiques à des simulations complexes impliquant des équations différentielles, des processus stochastiques, des algorithmes d’optimisation, etc. Ces modèles trouvent des applications dans de nombreux domaines, tels que la physique, la biologie, l’ingénierie, l’économie, l’écologie, et les sciences sociales. Ils sont utilisés pour étudier des systèmes physiques, des processus biologiques, la dynamique des populations, les modèles climatiques, les marchés financiers, et bien d’autres encore.\vspace{0.25cm}\\
+{\color[HTML]{371e77}\textbf{(2)} \textbf{Calculs scientifiques :}}
+les calculs scientifiques font référence à l’utilisation de méthodes mathématiques et de techniques de calcul pour analyser des données, résoudre des problèmes ou réaliser des simulations dans le cadre de la recherche scientifique et de l’ingénierie. Ces calculs couvrent un large éventail de méthodes numériques, d’algorithmes et d’outils informatiques, tels que l’intégration numérique, les solveurs d’équations différentielles, les techniques d’algèbre linéaire, les algorithmes d’optimisation, etc. Ils sont appliqués dans divers domaines scientifiques et techniques pour l’analyse de données, les tests d’hypothèses, la validation de modèles, l’optimisation, la simulation et la prédiction. Les scientifiques et les ingénieurs utilisent des logiciels spécialisés, des langages de programmation (comme \textit{MATLAB} et \textit{Python} avec des bibliothèques telles que \textit{NumPy} et \textit{SciPy}) ainsi que des ressources informatiques à haute performance pour réaliser des calculs scientifiques complexes de manière efficace.\vspace{0.75cm}\\
+{\color[HTML]{1C033C} \textbf{\uline{\href{}{{\faSearchPlus} THÈME 3: \MakeUppercase{Intelligence Artificielle (IA) et Mathématiques}}} (débutant)}}\vspace{0.25cm}\\
+{\color[HTML]{371e77}\textbf{\textit{l'intelligence artificielle (IA)}}}: \textit{l'intelligence artificielle (IA)} et les mathématiques sont des domaines profondément interconnectés, qui se renforcent mutuellement pour stimuler l'innovation et résoudre des problèmes dans divers secteurs. L'IA repose sur des concepts mathématiques, des algorithmes et des techniques pour développer des systèmes intelligents capables de percevoir, de raisonner, d'apprendre et d'agir de manière autonome. Les mathématiques fournissent la base théorique de nombreux algorithmes d'IA, notamment dans les domaines de l'apprentissage automatique, des réseaux neuronaux, de l'optimisation et du raisonnement probabiliste. Des concepts tels que l'algèbre linéaire, le calcul différentiel et intégral, la théorie des probabilités et les statistiques jouent des rôles essentiels dans la conception et l’analyse des modèles et algorithmes d’IA. En outre, les applications de l'IA impliquent souvent des calculs mathématiques complexes ainsi que des techniques de traitement des données, de reconnaissance de motifs et de prise de décision. La nature interdisciplinaire de l'IA et des mathématiques favorise les progrès dans ces deux domaines, conduisant au développement de systèmes intelligents qui améliorent l'efficacité, la productivité et l'innovation.
+\vspace{0.25cm}
+\section{{\faTags}\textbf{Productions scientifiques}}\vspace{0.25cm}
+{\color[HTML]{1C033C} \textbf{\uline{\href{https://www.researchgate.net/profile/Hatem-Zayeni}{{\faPrint} \MakeUppercase{Publications :}}}}}\\[4pt]
+\textbf{{\color[HTML]{371e77}[1] Fading regularization method for the stationary Stokes data assimilation problem,} \boxed{\tiny\textbf{\color{violet}Quartile Q1}}.\\ \textit{\textcolor{red}{Hatem Zayeni}, Amel Ben Abda, Franck Delvare,}}\\Computer Methods in Applied Mechanics and Engineering 2024, \\\href{https://doi.org/10.1016/j.cma.2024.117450}{https://doi.org/10.1016/j.cma.2024.117450}\\[5pt]
+\textbf{Résumé :}
+Dans cette étude, nous abordons le problème d’assimilation de données pour les équations de Stokes stationnaire en utilisant la méthode de régularisation évanescente (FRM). Nous prouvons la convergence des formulations continue et discrète. Cette méthode est implémentée numériquement à l’aide de la méthode des solutions fondamentales (MFS). Les simulations numériques confirment les performances de l’algorithme en termes d’efficacité, de précision, de convergence, de stabilité et de robustesse face aux données bruitées, ainsi que sa capacité à débruiter les données.
+\\
+\textbf{Mots-clés : }{Problèmes inverses · Assimilation de données · Équations de Stokes · Méthode de régularisation Fading · Méthode des solutions fondamentales.
+}
+\vspace{0.25cm}
+
+\textbf{{\color[HTML]{371e77}[2] Fading regularization MFS algorithm for the Cauchy problem associated with the two-dimensional Stokes equations,} \boxed{\tiny\textbf{\color{violet}Quartile Q1}}. \\\textit{\textcolor{red}{Hatem Zayeni}, Amel Ben Abda, Franck Delvare, Faten Khayat}},\\ Numerical Algorithms 2023, \\\href{https://link.springer.com/article/10.1007/s11075-023-01543-8}{doi.org/10.1007/s11075-023-01543-8}\\[5pt]
+\textbf{Résumé :}
+Dans cet article, nous examinons l'application de la méthode de régularisation évanescente en combinaison avec la méthode des solutions fondamentales (MFS) au problème mal posé de Cauchy-Stokes. Pour des géométries bidimensionnelles à la fois lisses et lisses par morceaux, nous présentons une reconstruction numérique de la vitesse manquante et du tenseur de contrainte normale sur une partie inaccessible de la frontière, en utilisant les données bruitées sur-prescrites acquises sur la partie restante de la frontière accessible. Trois exemples numériques illustrent la précision, la convergence, la stabilité et l'efficacité de l'algorithme numérique proposé, ainsi que sa capacité à débruiter les données bruitées.\\
+\textbf{Mots-clés :  }{Problèmes inverses · Problème de Cauchy · Équations de Stokes · Méthode de régularisation évanescente · Méthode des solutions fondamentales.}
+\vspace{0.25cm}
+
+\textbf{{\color[HTML]{371e77}[3] Levenberg-Marquardt method for identifying Young's modulus of the elasticity imaging inverse problem},\boxed{\tiny\textbf{\color{violet}Quartile Q1 en 2022}}.\\
+\textit{Talaat Abdelhamid, F. Khayat, \textcolor{red}{H. Zayeni}, Rongliang Chen}}, \\Electronic Research Archive, 2022, 30(4): 1532-1557, \href{https://link.springer.com/article/10.1007/s11075-023-01543-8}{ doi:10.3934/era.2022079}\\[5pt]
+\textbf{Résumé :}
+La présente étude se concentre sur la reconstruction du module de Young pour le problème inverse en imagerie élastique. Il s'agit d'un problème très intéressant et complexe rencontré dans la détection des tumeurs, où la variation des propriétés élastiques des tissus mous permet de distinguer les tissus normaux des tissus malades. La méthode de Levenberg-Marquardt est utilisée pour traiter ce problème inverse mal posé, et la minimisation non convexe est transformée en un problème convexe. Nous obtenons une expression explicite pour calculer la direction de descente. La technique proposée, avec des coefficients constants et dépendants de l’espace et pour différents matériaux réels, est examinée. Les résultats obtenus des vues 2D et 3D pour le module de Young reconstruit concordent avec ceux des coefficients exacts. L'algorithme proposé est implémenté pour différents niveaux de bruit dans les données.\\
+\textbf{Mots-clés :  }{Problèmes d'identification · Problème inverse d'imagerie élastique · Méthode de Levenberg-Marquardt· Module de Young · Problème des moindres carrés.}\vspace{0.5cm}\\
+{\color[HTML]{1C033C} \textbf{\uline{\href{}{{\faPrint} \MakeUppercase{en cours de travail et  Articles soumis :}}}}}\vspace{0.25cm}\\[4pt]
+\textbf{{\color[HTML]{371e77}[4] Simultaneous heat source identification and  thermal field reconstruction using the fading regularization method applied to noisy experimental data},\\ \textit{\textcolor{red}{Hatem Zayeni}, Jean-Luc Hanus, Franck Delvare, Laëtitia Caillé, Amel Ben Abda}}, 2024 (en cours)\\[5pt]
+\textbf{Résumé :}
+Les problèmes inverses associés aux équations ou systèmes elliptiques se réfèrent à la tâche complexe de déterminer des paramètres inconnus, la géométrie ou les conditions aux limites. Depuis les travaux fondamentaux de Hadamard \cite{1953}, de tels problèmes sont connus pour être mal posés, et des méthodes de régularisation sont utilisées. Dans ce travail, nous examinons l'application de la méthode de régularisation évanescente (FRM) pour aborder l'assimilation de données mal posée et l'identification de sources dans un problème thermique, celui d'une plaque mince avec une zone de chauffage. Cette approche de régularisation est un processus itératif dont la convergence a également été démontrée. Cette méthode simplifie la résolution du problème inverse en le transformant en une séquence de problèmes d'optimisation avec une contrainte d'égalité. À chaque étape itérative, on cherche la solution de l'équation d'équilibre qui approxime le mieux les données expérimentales et l'élément optimal précédemment obtenu \cite{2000}, \cite{2001}.
+L'algorithme est implémenté numériquement en utilisant la méthode sans maillage des solutions fondamentales (MFS) \cite{1964}. La technique inverse est d'abord validée avec des données synthétiques provenant d'une solution de référence par éléments finis. Dans une deuxième étape, la méthode est appliquée aux données expérimentales obtenues par thermographie infrarouge.
+\\
+\textbf{Mots-clés :  }{Problèmes inverses, Problème d'assimilation de données, Équations de Helmholtz modifiées, Méthode de régularisation évanescente, Méthode des solutions fondamentales, Identification de sources.}
+\vspace{0.25cm}\\
+
+\textbf{{\color[HTML]{371e77}[5] An alternative RG-FADING-MFS Algorithm for the inverse point sources Cauchy-Stokes equations},\\ \textit{\textcolor{red}{Hatem Zayeni}, Amel Ben Abda, Franck Delvare}}, (en cours)\\[5pt]
+\textbf{Résumé :}
+Dans cette étude, nous proposons un algorithme alternatif \textbf{RG-FADING-MFS} (où RG désigne la Méthode de l'écart à la réciprocité - Reciprocity Gap Method) pour l'identification des sources ponctuelles et la complétion des données, simultanément, pour les équations de Stokes.
+\\
+\textbf{Mots-clés :  }{Problèmes inverses · Problème de Cauchy · Équations de Stokes · Méthode de régularisation évanescente · Méthode des solutions fondamentales · Sources ponctuelles · Fonctionnel de l'écart à la réciprocité.}
+\vspace{0.25cm}
+\textbf{{\color[HTML]{371e77}[6] Identification of  Robin Coefficient for non-stationary Stokes equations Using the Levenberg-Marquardt Method}, \textit{\textcolor{red}{Hatem Zayeni} \& Faten Khayat}},  (en cours)\\[5pt]
+\textbf{Résumé :}
+Dans ce travail, nous nous concentrons sur la reconstruction du coefficient de Robin pour les équations de Stokes non stationnaires. Il s'agit d'un problème très intéressant et complexe en médecine. La méthode de Levenberg-Marquardt est utilisée pour traiter ce problème inverse mal posé, et la minimisation non convexe est transformée en un problème convexe. Nous obtenons une expression explicite pour calculer la direction de descente. Nous prouvons la convergence quadratique de la méthode de Levenberg-Marquardt pour le problème inverse d'identification d'un coefficient de Robin pour le système de Stokes. Les résultats obtenus sont compatibles avec ceux des coefficients exacts. L'algorithme proposé est implémenté pour différents niveaux de bruit dans les données.\\
+\textbf{Mots-clés :  }{Coefficient de Robin · Méthode de Levenberg-Marquardt · Équations de Stokes non stationnaires.}
+\vspace{0.25cm}
+
+\textbf{{\color[HTML]{371e77}[7] Analysis of a mixed DG method for the second order
+curl-curl operator},\\ \textit{ Sayed Sayari} \& \textcolor{red}{Hatem Zayeni}}, (en cours)\\ [5pt]
+\textbf{ Résumé :}
+Dans cet article, nous proposons une méthode de Galerkin discontinue locale pour la discrétisation des équations de Maxwell de second ordre curl-curl et effectuons son analyse d'erreur. Nous proposons une nouvelle technique pour dériver effectivement les estimations d'erreur en fonction de la taille du maillage \( h \). Nous présentons quelques expériences numériques pour confirmer la stabilité et la précision des schémas.\\
+\textbf{Mots-clés : }{Méthode de Galerkin discontinue · Équations de Maxwell · Estimations d'erreur · Problèmes aux limites.}
+\newpage
+\section{{\faFilePdf} \textbf{Activités d'enseignement (2024-2025) - S1. (total de 82 heures effectuées)}}\vspace{0.25cm}
+%---------------------------------------------------
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-3cm}}r }
+\textbf{{\color[HTML]{371e77} {\faFileCode} Algorithmique}} &\hfill \color[HTML]{371e77} UFR des sciences, Université de Caen Normandie.\\[4pt]
+{\textit{\href{https://uniform.unicaen.fr/catalogue/formation/l/7051-licence-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales--miashs-}{{\faUsers} Licence 2 Maths Info et app. aux Sc. Humaines et Sociales}} (L2 Miashs S3)} &\hfill  {\color[HTML]{761E31}{\faPython} \textbf{Python}} \\[5pt]
+\textbf{TP: volume horaire : 20 heures} &
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{\hspace{1cm}}l @{\hspace{2cm}}l }
+\faCheckCircle Listes.& \faCheckCircle Algorithmes de tri.\\
+\faCheckCircle Arbres.& \faCheckCircle Tri et complexité.\\
+\faCheckCircle  Arbres Binaires de Recherche.& \faCheckCircle Graphe orienté.
+\end{tabularx}
+\section{}
+\vspace{0.5cm}
+% ------------------------------------------------
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{2.7cm}}r }
+\textbf{\color[HTML]{371e77} {\faFileCode} Analyse et applications informatiques} &\hfill \color[HTML]{371e77} UFR des sciences, Université de Caen Normandie. \\[4pt]
+{\textit{\href{https://uniform.unicaen.fr/catalogue/formation/licences/5759-licence-mathematiques}{{\faUsers} Licence 2 Mathématiques }} (L2 Maths S3)} & \hfill  {\color[HTML]{761E31}{\faPython} \textbf{Geogebra}}\\[5pt]
+ \textbf{TP et TD : volume horaire : 22 heures}&
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{\hspace{1cm}}l @{\hspace{3cm}}l }
+\faCheckCircle   Continuité uniforme (ou : ”le grand retour des epsilon’s”).& \faCheckCircle Suite de fonctions.\\
+\faCheckCircle  Intégrale de Riemann.& \faCheckCircle Courbes paramétrées.
+\end{tabularx}
+\section{}
+\vspace{0.5cm}
+%---------------------------------------------------
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{2cm}}r }
+\textbf{\color[HTML]{371e77} {\faFileCode} Outils mathématiques} &\hfill \color[HTML]{371e77} UFR des sciences, Université de Caen Normandie.\\[4pt]
+{\textit{\href{https://uniform.unicaen.fr/catalogue/formation/licences/5660-licence-sciences-de-la-vie}{{\faUsers}  Licence 1 Sciences de la Vie }} (SVIL1201 S1)} & \hfill\\[5pt]
+\textbf{CM et TD : volume horaire : 20 heures}  \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{\hspace{1cm}}l @{\hspace{2cm}}l }
+\faCheckCircle  Nombres réels, inégalités, valeur absolue.& \faCheckCircle Primitives et intégrales.\\
+\faCheckCircle  Etude de fonctions.& \faCheckCircle Systèmes d'équations linéaires.
+\end{tabularx}
+\section{}
+\vspace{0.5cm}
+%---------------------------------------------------
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-0.17cm}}r }
+\textbf{\color[HTML]{371e77} {\faFileCode} Mathématiques appliquées à l’économie et la gestion} &\hfill \color[HTML]{371e77} UFR Droit, Université de Caen Normandie.\\[4pt]
+{\textit{\href{https://uniform.unicaen.fr/catalogue/formation/licences/7041-licence-administration-economique-et-sociale?s=trouver-sa-formation&r=}{{\faUsers}  Licence 1 Administration Économique et Sociale }} (AESL1201 S1)} & \hfill\\[5pt]
+\textbf{TD : volume horaire : 20 heures}  \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{\hspace{1cm}}l}
+\faCheckCircle Utiliser des expressions mathématiques pour résoudre des problèmes d’économie et de gestion.\\
+\faCheckCircle Les ensembles, Les fonctions.\\
+\faCheckCircle  Introduction aux mathématiques financières.
+\end{tabularx}
+\vspace{0.25cm}
+\section{{\faFilePdf} \textbf{Activités d'enseignement (2024-2025) - S2. (total de 110 heures prévues)}}\vspace{0.25cm}
+%---------------------------------------------------
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{2.5cm}}r }
+\textbf{\color[HTML]{371e77} {\faFileCode} Algèbre 2} &\hfill \color[HTML]{371e77} UFR des sciences, Université de Caen Normandie. \\[4pt]
+{\textit{\href{https://uniform.unicaen.fr/catalogue/formation/licences/5759-licence-mathematiques}{{\faUsers} Licence 1 Mathématiques }} (L1 Maths S2)} & \hfill\\[5pt]
+ \textbf{TD : volume horaire : 50 heures}&
+\end{tabularx}
+\section{}
+\vspace{0.5cm}
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-6cm}}r }
+\textbf{\color[HTML]{371e77} {\faFileCode} Compléments Maths 4} &\hfill \color[HTML]{371e77} UFR des sciences, Université de Caen Normandie. \\[4pt]
+{\textit{\href{https://uniform.unicaen.fr/catalogue/formation/licences/7296-licence-mathematiques-et-informatique-appliquees-aux-shs-p.-preparatoire-au-professorat-des-ecoles--p.p.p.e.-?s=trouver-sa-formation}{{\faUsers} Licence 2 PPPE (Parcours préparatoires au professorat des
+écoles) }} (L2 MIASHS PPPE S4)} & \hfill\\[5pt]
+ \textbf{25h CM et 35h TD : volume horaire : 60 heures}&
+\end{tabularx}
+\vspace{0.5cm}
+\section{{\faFilePdf} \textbf{Activités d'enseignement (2023-2024) (total de 50 heures effectuées)}}\vspace{0.25cm}
+\vspace{0.5cm}
+% ------------------------------------------------
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-8.2cm}}r }
+\textbf{\color[HTML]{371e77} {\faFileCode} MP Analyse numérique} &\hfill \color[HTML]{371e77} École Nationale d'Ingénieurs de Tunis : Janv. 2023 - Mai 2023. \\[4pt]
+{\textit{\href{https://enit.rnu.tn/filieres-minds/}{{\faUsers} Cycle d'ingénierie de première année en modélisation pour l'industrie et les services}} (MINDS)} & \hfill  {\color[HTML]{761E31}{\faPython} \textbf{Python}}\\[5pt]
+ \textbf{Volume horaire : 26 heures}&
+\end{tabularx}
+\begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item[\faCheckCircle] \textbf{Introduction à l'Analyse Numérique :}
+        \begin{itemize}
+        \item[\faPaperclip] Vue d'ensemble des méthodes numériques et leur importance.
+        \item[\faPaperclip] Sources d'erreurs dans les calculs numériques, stabilité numérique et précision.
+        \end{itemize}
+        \item[\faCheckCircle] \textbf{Méthodes aux différences finies :}
+        \begin{itemize}
+        \item[\faPaperclip] Fondamentaux des approximations aux différences finies. Formules des différences avant, arrière et centrales, etc.
+        \item[\faPaperclip] Application des méthodes aux différences finies pour résoudre des équations différentielles (par exemple, l'équation de la chaleur, l'équation de Laplace).
+        \item[\faPaperclip] Analyse d'erreur et tests de convergence.
+        \end{itemize}
+        \item[\faCheckCircle] \textbf{Implémentation numérique avec python :}
+        \begin{itemize}
+         \item[\faPaperclip] Aperçu des bibliothèques de calcul numérique en Python (NumPy, SciPy).
+         \item[\faPaperclip] Aperçu des méthodes d'intégration numérique et leur importance.
+        \item[\faPaperclip] Implémentation des différences finies en Python et visualisation des résultats numériques à l'aide de Matplotlib et de PraView.
+        \end{itemize}
+        \item[\faCheckCircle] \textbf{Mini projet :}\\
+Les étudiants ont travaillé sur un projet impliquant la mise en œuvre d’une des méthodes numériques abordées lors des ateliers, afin de résoudre le problème d’optimisation de la température d’un four. Ce projet incluait l’analyse de l’exactitude et des performances de la méthode implémentée, avec une comparaison aux solutions analytiques ou à d’autres méthodes numériques.
+\end{itemize}
+\vspace{0.5cm}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\color[HTML]{371e77} {\faFileCode} Problèmes aux limites et analyse fonctionnelle} \hfill \color[HTML]{371e77} ENIT : Jan. 2024 - Mai 2024, {\color[HTML]{761E31}{\faPython} \textbf{Python, FEniCS, Gmsh}} \\[4pt]
+{\textit{\href{http://www.edsti.enit.rnu.tn/fr/index.php?id=3}{{\faUsers} Première année Master en Modélisation Mathématique et Science des Données}}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+ \textbf{Volume horaire : 24 heures}&
+\end{tabularx}
+
+\begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+    \item[\faCheckCircle] \textbf{Méthodes des éléments finis (FEM) :}
+        \begin{itemize}
+        \item[\faPaperclip] Introduction au FEM et ses applications.
+        \item[\faPaperclip] Concept de discrétisation, fonctions de base et génération de maillage.
+        \item[\faPaperclip] Assemblage des matrices.
+        \item[\faPaperclip] Techniques de résolution directes et itératives pour les systèmes linéaires.
+        \item[\faPaperclip] Analyse d'erreur et tests de convergence.
+        \end{itemize}
+
+    \item[\faCheckCircle] \textbf{Implémentation numérique avec FEniCS :}
+        \begin{itemize}
+        \item[\faPaperclip] Présentation de FEniCS, la bibliothèque de calcul numérique FEM en Python et C++.
+        \item[\faPaperclip] Implémentation des méthodes aux différences finies et aux éléments finis en Python.
+        \item[\faPaperclip] Visualisation des résultats numériques à l'aide de Matplotlib et ParaView.
+        \end{itemize}
+
+    \item[\faCheckCircle] \textbf{Mini projet :}
+Les étudiants ont exploré l’analyse théorique et la mise en œuvre pratique de la Méthode des Éléments Finis (FEM) pour résoudre une Équation aux Dérivées Partielles (EDP). Plusieurs EDP leur ont été proposées, parmi lesquelles : les équations de la chaleur et de Laplace (linéaires et non linéaires), les équations de Stokes, les équations d’élasticité, l’équation d’advection diffusion et l’équation de réaction-diffusion. Les étudiants ont utilisé FEniCS pour résoudre numériquement l’une des EDP sélectionnées, ont mené une analyse théorique de l’EDP choisie et ont discuté de la méthode numérique appliquée pour sa résolution. Enfin, ils ont visualisé les solutions obtenues à l’aide de ParaView.
+\end{itemize}\vspace{1cm}
+% Projects
+\section{{\faTerminal} \textbf{Expériences postdoctorales }}\vspace{0.25cm}
+\begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+\item[{\color[HTML]{371e77} \faRandom}]\textbf{\textbf{ Poste postdoctoral : du avril 2024 au juillet 2024}}\\
+\uline{\href{https://www.mechlabgabriellame.fr/laboratoire/}{Laboratoire de Mécanique Gabriel Lamé}}, Centre INSA Val de Loire, Bourges, France.
+\end{itemize}\vspace{0.25cm}
+
+Dans ce post-doc, nous avons exploré l'application de la méthode de régularisation évanescente (FRM) pour aborder l'assimilation de données mal posée et l'identification de sources dans un problème thermique, celui d'une plaque mince avec une zone de chauffage. Cette approche de régularisation était un processus itératif dont la convergence a été démontrée. Elle a simplifié la résolution du problème inverse en le transformant en une séquence de problèmes d'optimisation avec une contrainte d'égalité. À chaque étape itérative, la solution de l'équation d'équilibre a été recherchée pour approximer au mieux les données expérimentales et l'élément optimal précédemment obtenu.
+
+\vspace{0.25cm}
+
+% \section{{\faSitemap} Intérêts de Recherche}\vspace{0.25cm}
+
+% Mon projet de recherche se concentre sur :
+% \begin{itemize}
+%     \item[\faMapSigns] Avancer les méthodes computationnelles et la modélisation mathématique à travers le développement de packages de code innovants. Au cœur de cette entreprise se trouve l'utilisation de l'intelligence artificielle (IA) pour aborder des problèmes mathématiques complexes et optimiser les cadres de code existants. Avec un engagement à améliorer l'efficacité et la précision, mon objectif est de raffiner les techniques de modélisation mathématique et de rationaliser les processus de calcul. Dans le but de réaliser ces objectifs, j'ai entrepris la création d'un package Python spécialement conçu à cet effet, avec pour objectif ultime de contribuer à l'avancement à la fois des applications théoriques et pratiques en modélisation mathématique et en optimisation.
+%     \item[\faMapSigns] Poursuivant mes recherches, j'approfondis le développement d'algorithmes sophistiqués et de méthodologies visant à relever un large éventail de défis en modélisation mathématique. À travers des expérimentations rigoureuses et des analyses, je perfectionne les modèles existants et explore de nouvelles approches de résolution de problèmes. De plus, je m'engage à diffuser les connaissances et à favoriser la croissance de l'expertise dans ce domaine. À cette fin, je souhaite participer à des cours et des ateliers couvrant des sujets tels que les méthodes numériques, les techniques d'optimisation et l'application de l'IA en modélisation mathématique. En partageant les connaissances acquises grâce à mes recherches et à mon expérience pratique, j'espère inspirer et autonomiser la prochaine génération de chercheurs et de praticiens dans ce domaine en évolution rapide.
+% \end{itemize}
+\section{{\faPlane} Stages et collaborations}\vspace{0.25cm}
+
+\begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+    \item[{\color[HTML]{371e77} \faRandom}]\textbf{3 mois : 01 Sep. 2021 - 30 Nov. 2021 au LMNO, Université de Caen-Normandie.}
+    \item[{\color[HTML]{371e77} \faRandom}]\textbf{2 mois : 01 Mai. 2022 - 30 Juin. 2022 au LMNO, Université de Caen-Normandie.}
+    \item[{\color[HTML]{371e77} \faRandom}]\textbf{3 mois : 01 Sep. 2022 - 30 Nov. 2022 au LMNO, Université de Caen-Normandie.}
+    \item[{\color[HTML]{371e77} \faRandom}]\textbf{3 mois : 01 Sep. 2023 - 30 Nov. 2023 au LMNO, Université de Caen-Normandie.}
+\end{itemize}
+
+\textbf{Mission :} Application de la méthode de régularisation évanescente pour résoudre les problèmes inverses associée aux équations de Stokes. Sous la direction du Professeur \uline{\href{}{\textbf{Franck DELVARE}}}.\\
+
+\vspace{0.25cm}
+
+\begin{itemize}
+    \item[{\color[HTML]{371e77}\faRandom}] \textbf{Collaboration} avec le Professeur \textbf{\uline{\href{}{Talaat Abdelhamid}}}, Professeur Associé à l'Université de Minoufiya, Faculté de Génie Électronique, Égypte. 2020-2021:
+\end{itemize}
+
+\textbf{Mission :} Application de la méthode de Levenberg-Marquardt pour l'identification du module de Young du problème d'imagerie de l'élasticité.\\
+\section{{\faSellsy} Conférences, symposiums et ateliers}\vspace{0.25cm}
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-3.8cm}}r }
+\color[HTML]{1C033C} \textbf{\href{}{{\faShare} Problèmes Inverses en Mécanique 2024}}\\
+{\color[HTML]{1C033C} \href{http://pim.ida.upmc.fr/Programme.html}{ 13ème école d'été de mécanique théorique à destination des doctorants et chercheurs en Mécanique.}}\\
+\color[HTML]{371e77} Du 9 au 14 septembre 2024 à Quiberon-France / organisé par le CNRS.
+\end{tabularx}
+\vspace{0.15cm}\\
+Lors de cette école d’été, l'objet principal était l’étude des problèmes directs en mécanique, qui consistent à déterminer le champ de déplacements ou de vitesses d’un solide ou d’un fluide, en fonction des caractéristiques du milieu ainsi que des conditions aux limites et des efforts appliqués. Ces problèmes sont formulés dans un cadre fonctionnel rigoureux, où le problème aux limites est bien posé au sens d’Hadamard. Cela implique qu’il admet une solution unique, qui dépend de manière continue des données d’entrée, telles que les efforts volumiques, les conditions aux limites et les conditions initiales.
+
+\vspace{0.25cm}
+
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-3.8cm}}r }
+\color[HTML]{1C033C} \textbf{\href{}{{\faShare} MECA-J 2024 }}\\
+{\color[HTML]{1C033C} \href{https://mecaj2024.sciencesconf.org/}{Congrès des Jeunes Chercheurs en Mécanique 2024.}}\\
+\color[HTML]{371e77} En distanciel du 28 au 30 août 2024 / Organisé par l'Association Française de Mécanique.
+\end{tabularx}
+
+Le congrès MecaJ 24 avait pour objectif de favoriser les échanges et la collaboration entre jeunes chercheurs en mécanique, issus de différents laboratoires français. Dans ce cadre, j’ai eu l’opportunité de présenter les résultats de mes recherches lors d’une communication orale, en tant que post-doctorant au Laboratoire de Mécanique Gabriel Lamé (LaMé), Centre INSA Val de Loire, à Bourges, France.\\
+\textbf{Titre : \small \it Simultaneous heat source identification and thermal field reconstruction using the fading regularization method applied to noisy experimental data.}
+
+\vspace{0.25cm}
+
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-3.8cm}}r }
+\color[HTML]{1C033C} \textbf{\href{}{{\faShare} PICOF 2022}} (Organisateur et participant)\\
+{\color[HTML]{1C033C}\href{https://picof22.sciencesconf.org/}{10e Conférence Internationale sur les Problèmes Inverses, le Contrôle et l'Optimisation de Formes.}}\\
+\color[HTML]{371e77} Du 25 au 27 octobre 2022 à Caen-France / organisé par le LMNO-UNICAEN.
+\end{tabularx}
+
+Lors de la 10e Conférence Internationale sur les Problèmes Inverses, le Contrôle et l’Optimisation de Formes (PICOF 2022), qui s’est tenue à Caen, France, du 25 au 27 octobre 2022, j’ai présenté un travail de recherche et contribué en tant qu’organisateur. Cette conférence a réuni des jeunes chercheurs, des chercheurs seniors et des industriels, tous intéressés par les problématiques mathématiques et numériques liées aux problèmes inverses, au contrôle de forme et à l’optimisation. PICOF, désormais à sa 10e édition, s’est tenue dans plusieurs villes à travers le monde, notamment à Carthage (Tunisie), Nice (France), Marrakech (Maroc), Carthagène (Espagne), Paris (France), Hammamet (Tunisie), Autrans (France), et Beyrouth (Liban).\\
+\textbf{Titre : \small \it Fading regularization MFS algorithm for the Cauchy problem associated with the two-dimensional Stokes equations.}
+
+\vspace{0.25cm}
+
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-3.8cm}}r }
+\color[HTML]{1C033C} \textbf{\href{https://massai.esprit.tn/AISummerSchool/}{{\faShare} MASSAI 2022: École d'été Méditerranéenne et Africaine sur l'Intelligence Artificielle.}}\\
+\color[HTML]{371e77} Du 13 au 17 juin 2022 à Tunis-Tunisie \ Organisé par l'ESPRIT.
+\end{tabularx}
+
+Pendant cinq jours, j'ai participé à un programme diversifié comprenant des conférences, des tutoriels approfondis et des ateliers sur les développements de pointe en intelligence artificielle et en science des données. Cet événement, destiné aux étudiants diplômés, doctorants, postdoctorants, universitaires, professionnels et membres d'institutions publiques ou privées, offrait une expérience éducative complète. J'ai eu l'opportunité de suivre des tutoriels parallèles sur des sujets tels que l'apprentissage automatique industriel, l'apprentissage par renforcement profond et la surveillance des risques de catastrophe à l'aide d'images satellites. J'ai également participé à des sessions pratiques parallèles et à six ateliers animés par des instructeurs certifiés. De nombreuses opportunités de réseautage étaient proposées, notamment à travers des sessions de posters, des rencontres aux stands des sponsors et des événements sociaux.
+
+\vspace{0.25cm}
+
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-3.8cm}}r }
+\color[HTML]{1C033C} \textbf{\href{https://sites.google.com/view/read-2024-lamsin/accueil?authuser=0}{{\faShare} READ : 11e-14e réunion annuelle des doctorants.}}\\
+\color[HTML]{371e77} du 13 au 17 janvier 2021-22-23-24 Tunisie.
+\end{tabularx}
+
+Depuis 2007, cette réunion des doctorants du Lamsin, dédiée à la présentation de leurs recherches, a toujours été un moment très productif, tant sur le plan individuel que collectif. J'ai trouvé cette expérience particulièrement enrichissante, car elle m'a offert l'opportunité de présenter et de discuter mes travaux devant mes collègues et professeurs, d’écouter leurs questions et suggestions, ce qui a permis d’améliorer mon travail. C’était également une excellente occasion de rencontrer d’autres chercheurs travaillant dans des domaines similaires, de trouver de l’inspiration et d’enrichir mes connaissances scientifiques.
+
+\vspace{0.25cm}
+
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-3.8cm}}r }
+\color[HTML]{1C033C} \textbf{\href{https://www.lmno.cnrs.fr/sem/jeunes}{{\faShare} Séminaire des Jeunes Chercheurs LMNO.}}\\
+\color[HTML]{371e77} De 2021 à 2023 LMNO-France. \\
+\end{tabularx}
+
+\vspace{0.25cm}
+
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-3.8cm}}r }
+\color[HTML]{1C033C} \textbf{\href{https://www.lmno.cnrs.fr/sem/jeunes}{{\faShare} Séminaire LAMSIN.} (En ligne)}\\
+\color[HTML]{371e77} 2020-présent ENIT-Tunisie.
+\end{tabularx}
+
+\vspace{0.25cm}
+
+\begin{tabularx}{\linewidth}{ @{}l @{\hspace{-3.8cm}}r }
+{\color[HTML]{1C033C} \textbf{{\faShare} Groupe de travail sur les problèmes inverses.}} Dirigé par le Professeur Amel BEN ABDA\\\color[HTML]{371e77} 2020-présent ENIT-Tunisie.
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\section{{\faPlusSquare } Intérêts}\vspace{0.25cm}
+\begin{center}
+  {\faAt} Technologies ○
+{\faFutbol} Sports ○
+{\faCode} Programmation ○
+{\faPlane} Voyages et camping ○
+{\faFilm} Cinéma et Anime.
+\end{center}
+
+\vspace{0.5cm}
+
+\section{{\faBook} Résumé de mes travaux de thèse}\vspace{0.5cm}
+\fbox{\begin{minipage}{18 cm}
+Cette section est consacrée à la présentation de mon travail de recherche, réalisé dans le cadre de ma thèse au sein de l'équipe des problèmes inverses et de modélisation numérique au Laboratoire de Modélisation Mathématique et Numérique en Sciences de l'Ingénieur (LAMSIN), à l'ENIT, Université de Tunis Elmanar, ainsi que dans l'équipe Modélisation et Applications au laboratoire de Mathématiques Nicolas Oresme (LMNO), à l'Université de Caen Normandie - France. Ma thèse est supervisée par Amel BEN ABDA (Professeur, ENIT), Faten KHAYAT (Maître de conférences, INSAT), et Franck DELVARE (Professeur, UFR Sciences UNICAEN). Les références citées dans cette section sont répertoriées dans la bibliographie à la fin du fichier.
+\end{minipage}}
+
+\hspace{0.5cm}\textbf{{\Large U}}n fluide est un matériau caractérisé par sa déformabilité, sa continuité, son absence de rigidité et sa capacité à s'écouler. La plupart des fluides sont constitués de liquides et de gaz. Les équations non linéaires de Navier-Stokes \eqref{nv} figurent parmi celles qui modélisent la dynamique des fluides et sont les plus significatives.
+\begin{equation}\label{nv}
+\begin{aligned}
+\overbrace{\rho(\underbrace{\partial_t \boldsymbol{u}}_{\begin{array}{c}
+\text { Accélération } \\
+\text { instationnaire }
+\end{array}} + \underbrace{\boldsymbol{u} \cdot \nabla \boldsymbol{u}}_{\begin{array}{c}
+\text { Accélération } \\
+\text { convective }
+\end{array}})}^{\text {Inertie}}
+- \overbrace{\underbrace{\nu \Delta \boldsymbol{u}}_{\text {Viscosité}}
++ \underbrace{\nabla p}_{\begin{array}{c}
+\text { Gradient de } \\
+\text { pression }
+\end{array}}}^{\text {Divergence des contraintes}}
+&= \overbrace{\mathbf{f}}^{\text { Forces volumiques }}, \\
+\text { L'équation de continuité : } \nabla \cdot \boldsymbol{u} & = 0.
+\end{aligned}
+\end{equation}
+La résolution d'un problème de mécanique des fluides se fait en appliquant les principes et théorèmes généraux de la mécanique et de la thermodynamique, tels que le principe de conservation de la masse, le principe fondamental de la dynamique et le principe de conservation de l'énergie. Il existe de nombreux modèles d'écoulement des fluides, et dans cette thèse, nous nous intéressons aux équations de Stokes stationnaires et non stationnaires incompressibles. Ces deux équations sont une forme simplifiée des équations de Navier-Stokes, qui décrivent le mouvement d'un fluide visqueux et incompressible en l'absence de forces corporelles dans un état stationnaire. Ces équations sont obtenues en négligeant l'accélération convective (terme non linéaire) dans les équations de Navier-Stokes précédentes \eqref{nv} et l'accélération instationnaire (dérivée par rapport au temps) pour le cas stationnaire, consistant en l'équation de continuité et l'équation de la quantité de mouvement, qui lient le gradient de pression et les forces visqueuses au changement de la quantité de mouvement dans le fluide. L'équation de la quantité de mouvement est exprimée par l'équation d'écoulement de Stokes, qui est une équation aux dérivées partielles linéaire du second ordre pouvant être résolue par diverses techniques analytiques et numériques. L'équation de continuité ($\nabla\cdot \boldsymbol{u} = 0$) est également connue sous le nom de contrainte d'incompressibilité, qui garantit que le fluide est incompressible, ce qui signifie que la densité du fluide reste constante dans le temps et l'espace au sein de tout le domaine. En d'autres termes, elle impose la conservation de la masse dans un écoulement incompressible en affirmant que le flux total de fluide entrant ou sortant d'un volume de contrôle est nul.
+
+\hspace{0.5cm}\textbf{{\Large L}}es problèmes inverses associés aux équations de Stokes se réfèrent à la tâche complexe de déterminer des paramètres inconnus, la géométrie ou les conditions aux limites du système d'écoulement à partir des données de mesure disponibles, généralement la trace de la vitesse et du tenseur de contraintes normal. Cependant, dans de nombreuses applications réelles, il n'est pas possible de mesurer directement les champs de vitesse et de pression du fluide. Au lieu de cela, seules certaines mesures, telles que le vitesse du fluide ou le tenseur de contraintes normal, peuvent être mesurées. Le modèle simplifié régi par les équations de Stokes stationnaires incompressibles ne permet pas de déterminer correctement la paire vitesse-pression $(\boldsymbol{u}, p)$. Cependant, en obtenant des données supplémentaires d'observation, telles que la valeur de la vitesse $\boldsymbol{u}_{obs}$ dans un sous-ensemble ouvert non vide et arbitrairement petit $\omega_{d}\subset \Omega$, ou la valeur des données de Cauchy $\boldsymbol{\Phi}_{obs}=(\boldsymbol{u}_{obs},[\boldsymbol{\sigma}(\boldsymbol{u}, p)\boldsymbol{n}]_{obs})$ dans un sous-ensemble ouvert non vide $\Gamma_{d}\subset \Gamma$.
+
+Le problème de Cauchy-Stokes est un exemple de problème inverse associé à l'équation de Stokes et appartient à une classe de problèmes aux limites, où les conditions aux limites pour la vitesse et son tenseur de contraintes normal sont données uniquement sur une partie de la frontière du domaine, mais aucune information n'est fournie sur la partie restante de la frontière. Dans de tels problèmes inverses, la tâche la plus courante est de récupérer les conditions aux limites manquantes sur la partie inaccessible de la frontière en utilisant des données connues sur la partie accessible. Depuis Hadamard \cite{Hadamard1953LecturesEquations}, ce problème est considéré comme mal posé dans le sens où la dépendance de la solution par rapport aux données n'est pas continue. Comme nous l'avons mentionné précédemment, les problèmes inverses sont fréquemment mal posés. Le caractère mal posé du problème de Cauchy est principalement lié à l’instabilité de la solution, qui existe même pour une petite perturbation des données de Cauchy. Dans la littérature, plusieurs techniques de régularisation ont été utilisées pour aborder certains problèmes inverses, notamment le problème de Cauchy mal posé. Le concept de base de la régularisation consiste à remplacer le problème mal posé par une série de problèmes bien posés dont les solutions approchées convergent vers la solution exacte du problème inverse initial. La méthode de Tikhonov \cite{Tikhonov1963SolutionMethod}, introduite par le mathématicien russe Andrey Nikolayevich Tikhonov, est l'une des approches les plus populaires pour les problèmes mal posés régis par des équations aux dérivées partielles. La technique de régularisation de Tikhonov consiste à résoudre le problème inverse au sens des moindres carrés en incorporant un terme de régularisation. Ce terme supplémentaire est la norme de la solution ou de son gradient.
+
+\hspace{0.5cm}\textbf{{\Large L}}a méthode de régularisation évanescente (FRM) a été proposée par Cimetière et al. \cite{Cimetiere2000UneEvanescente,Cimetiere2001SolutionRegularization} pour résoudre le problème de Cauchy lié à l'équation de Laplace. Cette méthode de régularisation est un processus itératif qui simplifie la solution du problème de Cauchy en le transformant en une séquence de problèmes d'optimisation avec une contrainte d'égalité. À chaque étape itérative, on cherche la solution de l'équation d'équilibre qui approxime le mieux les données et l'élément optimal précédent. En effet, la fonctionnelle à minimiser se compose de deux termes : un terme de relaxation pour minimiser l'écart entre l'élément optimal et les données (observations sur la partie accessible pour le problème de Cauchy) et un terme de régularisation pour contrôler l'écart entre l'élément optimal actuel et le précédent. À mesure que l'opération itérative se poursuit, le terme de régularisation supplémentaire ou de contrôle tend vers zéro, ce qui explique pourquoi la méthode est connue sous le nom de "Méthode de Régularisation Évanescente". La FRM diffère de la méthode de Tikhonov en ce que l'opérateur du problème de Cauchy n'est pas modifié et qu'une connaissance préalable de la solution n'est pas nécessaire. Les auteurs répondent à leurs objectifs en proposant une méthode de régularisation permettant d'obtenir une solution stable qui n'est pas dépendante d'un paramètre de régularisation et de débruiter les données en les recalculant. Comme nous l'avons mentionné précédemment, la FRM, introduite pour résoudre les problèmes de Cauchy associés à l'équation de Laplace, est adaptable à tout opérateur elliptique. La FRM peut également être vue comme une méthode pour l'identification de paramètres, les problèmes inverses géométriques et de source. En effet, il est possible de combiner la méthode de complétion de données avec la méthode de l'écart de réciprocité \cite{Andrieux1999ReciprocityIdentification} pour identifier des fissures, des obstructions et des fuites lorsque le champ de données n'est pas disponible sur l'ensemble de la frontière. Cette méthode est utilisée pour fournir ces données sur toute la frontière en se basant sur les données de Cauchy, qui sont requises par la FRM. En plus de son applicabilité à tout opérateur elliptique, la FRM peut être implémentée en utilisant de nombreuses méthodes numériques, telles que la Méthode des éléments de frontière (BEM), la Méthode des éléments finis (FEM) et la Méthode des solution fondamentales (MFS).
+
+\hspace{0.5cm}\textbf{{\Large L}}a méthode des solutions fondamentales (MFS) est une méthode de collocation sans maillage qui appartient à la famille des méthodes de Trefftz. Kupradze et Aleksidze \cite{Kupradze1964TheProblems} ont introduit la méthode au début des années 1960. Cette méthode peut être utilisée pour divers problèmes de valeurs aux limites, ainsi que pour des problèmes de conditions initiales et de frontières. Elle est particulièrement bien adaptée aux problèmes aux limites homogènes où la solution fondamentale de l'opérateur dans l'équation régissant est explicitement connue. À la fin des années 1970, Mathon et Johnston \cite{Mathon1977TheSolutions} ont proposé la MFS comme technique numérique pour les problèmes directs, suivie par des applications aux problèmes de potentiel dans \cite{Johnston1984TheFlow}. Les avantages de la MFS par rapport aux méthodes plus classiques de discrétisation des domaines ou des frontières (facilité d'implémentation, calcul plus rapide, besoins de stockage moindres et propriétés de convergence exponentielle) en font un candidat idéal pour résoudre efficacement des problèmes inverses dans des géométries compliquées et de plus grandes dimensions.
+
+\hspace{0.5cm}\textbf{{\Large E}}n s'appuyant sur les résultats rapportés dans les références \cite{Cimetiere2000UneEvanescente,Cimetiere2001SolutionRegularization} relatifs à l'équation de Laplace, cette étude est motivée par plusieurs considérations qui poussent à utiliser la méthode de régularisation évanescente (FRM) pour aborder les problèmes inverses de Stokes stationnaires. Trois questions clés émergent dans ce contexte. Tout d'abord, la question porte sur l'extension de la FRM, telle qu'introduite dans \cite{Cimetiere2000UneEvanescente,Cimetiere2001SolutionRegularization}, du cas de la Cauchy-Laplacienne au cas de la Cauchy-Stokes stationnaire. Ensuite, elle explore l'adaptabilité de la FRM pour relever le défi posé par le problème de continuation unique associé aux équations de Stokes. Enfin, l'étude examine l'application potentielle de la FRM en combinaison avec la méthode des solutions fondamentales (MFS) pour s'attaquer aux défis posés par les problèmes inverses de Stokes mal posés.
+
+\hspace{0.5cm}\textbf{{\Large L}}es techniques basées sur la longueur du pas de décentes et les méthodes de région de confiance sont deux types de méthodes d'optimisation utilisées pour résoudre le problème des moindres carrés (LSP) du type : $ \frac{1}{2}\|F(x)\|^{2}$, où $F(x)= [F_{1}(x), F_{2}(x), \dots, F_{m} (x)]^{{T}}$ est un vecteur de fonctions non linéaires, $n$ est le nombre d'inconnues $x\in \mathbb{R}^n$, ($n\leq m$).
+
+La méthode de Newton et la méthode de Gauss-Newton (GN) sont fréquemment utilisées pour résoudre les LSP. La méthode de Newton calcule la direction de descente optimale de la fonction des moindres carrés, ce qui donne un taux de convergence plus rapide. Cependant, pour déterminer la direction de descente, il est nécessaire d'obtenir les dérivées précises de la fonction des moindres carrés, ce qui est coûteux en termes de calcul. D'autre part, la méthode GN approxime les dérivées en utilisant une approche simple relativement facile à évaluer, mais la solution peut ne pas converger en raison de la simplification excessive des dérivées. La méthode de Levenberg-Marquardt (LMM) a été introduite par Levenberg et Marquardt pour résoudre les LSP en utilisant une approche de région de confiance. Dans la méthode GN, la matrice Hessienne simplifiée $\mathscr{H}^{GN}$ n'est pas toujours inversible, pour éviter ce problème, une Hessienne positive définie modifiée $\mathscr{H}^{LM}= \mathscr{H}^{GN}+\mathcal{L}^k$ est généralement utilisée. La LMM prend $\mathcal{L}^k = \beta_k I$, où $I$ est la matrice identité et $\beta_k$ représente le paramètre de Levenberg-Marquardt, une quantité scalaire qui évolue au cours de l'optimisation. La méthode de descente de gradient et la méthode GN sont combinées dans l'algorithme LM. Lorsque les paramètres s'éloignent de leur valeur optimale ($\beta_k$ augmente), le processus LMM fonctionne comme une méthode de descente de gradient, tandis qu'il se comporte comme une méthode GN lorsque les paramètres se rapprochent de leur valeur optimale ($\beta_k$ diminue). La LMM est connue pour avoir un taux de convergence quadratique sous des conditions de non-singularité. Yamashita et al. \cite{Yamashita2001OnMethod} ont étudié la solution d'un système d'équations non linéaires $F(x) = 0$ sous l'hypothèse $\left\|F(x) \right\|$, qui fournit une borne d'erreur locale, où le taux de convergence reste quadratique lorsque $\beta_k = \left\|F\left(x^{k}\right)\right\|^{2}$. Khayat \cite{Khayat2020IdentificationMethod} a établi la convergence quadratique de la LMM pour le problème inverse d'identification d'un coefficient de Robin $R(x)$ pour le système de Stokes stationnaire dans le cas où $R(x)$ est constant par morceaux dans une partie inaccessible de la frontière et que la vitesse d'une solution de référence donnée ne s'annule pas sur la frontière. Dans ce cas, le paramètre de régularisation est défini par $\beta_k = \left\|u(R^{k}) - y^{\delta}\right\|_{\Gamma_{out}}^{2}$, où $u(R^{k})$ est la solution du problème direct, $\Gamma_{out}$ est une partie inaccessible de la frontière et $y^{\delta}$ est les données observées bruitées.
+
+Nous souhaitons étendre ce travail aux équations de Stokes incompressibles non stationnaires, où nous avons observé la force corporelle et imposé des conditions aux frontières essentielles (Dirichlet), naturelles (Neumann) et de type Robin sur $\partial\Omega$. Notre objectif est d'identifier ce coefficient défini sur la partie inaccessible \textcolor{red}{$\Gamma_{out}$} à partir des mesures disponibles sur une partie accessible \textcolor{blue}{$\Gamma_{0}$} en utilisant la \textit{LMM} et de prouver la convergence quadratique de cette méthode.
+
+Le prochain problème inverse que nous avons introduit dans cette thèse est l'identification des modules de Young pour le problème d'imagerie en élasticité. Les équations de l'élasticité linéaire sont utilisées pour analyser le comportement des solides déformables qui suivent une loi linéaire et subissent de petites déformations et déplacements. Cela revêt une grande importance dans le cadre du problème inverse d'imagerie en élasticité (EIIP), qui est une technique médicale relativement récente utilisée pour détecter plusieurs pathologies et, en particulier, des tumeurs cancéreuses. Elle consiste à comparer les propriétés élastiques des tissus sains et malades afin de détecter les tumeurs. Pour ce faire, une petite compression quasi-statique est appliquée au tissu afin de mesurer le champ de déplacement ou le mouvement global du tissu. Ces données sont ensuite utilisées pour reconstruire le module de Young et/ou le rapport de Poisson, ce qui équivaut à résoudre un problème d'identification de paramètres inverses pour les équations de l'élasticité linéaire.
+
+Considérons le problème de l'élasticité suivant avec des conditions aux limites de Dirichlet et de Neumann, qui régissent le déplacement $\boldsymbol{u}$ dans les directions $x$ et $y$ lorsque des forces corporelles sont appliquées à $\Omega$. Nous proposons la méthode de Levenberg-Marquardt (LMM) comme une approche convergente intéressante pour traiter l'EIIP, en identifiant le module de Young défini dans le domaine $\Omega$ à partir des mesures disponibles sur une partie accessible de la frontière.
+
+Motivés par les recherches antérieures concernant l'identification d'un coefficient de Robin pour les équations de Stokes stationnaires incompressibles et en nous concentrant sur l'identification du module de Young dans les problèmes inverses d'imagerie en élasticité, cette étude soulève trois questions pertinentes. La première question explore l'utilité de la LMM pour traiter le défi de l'identification d'un coefficient de Robin pour les équations de Stokes incompressibles non stationnaires tout en garantissant la stabilité. La deuxième question vise à déterminer si la LMM présente une convergence quadratique dans ce contexte. Enfin, la troisième question examine la faisabilité de l'application de la LMM à l'identification du module de Young dans le cadre du problème inverse d'imagerie en élasticité (EIIP).
+\vspace{0.5cm}
+\section*{\bf Applications et Motivations}
+\vspace{0.5cm}
+\subsection*{Application au flux sanguin dans les anévrismes cérébraux}\label{Robin:app2}
+Une dilatation pathologique de la paroi d'un vaisseau sanguin de l'artère cérébrale qui forme un sac vasculaire est appelée anévrisme cérébral. Ces sacs sanguins sont généralement situés au point de ramification de l'artère à la base du cerveau.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.25]{Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg}
+    \caption{\centering Diagramme descriptif numérique d'un anévrisme intracrânien selon les National Institutes of Health (NIH) par Roshan D'Souza\protect\footnotemark}
+    \label{Robin:shema1}
+\end{figure}
+\footnotetext[1]{National Institutes of Health (NIH) : agence gouvernementale des États-Unis responsable de la recherche médicale et biomédicale.}
+\begin{figure}[ht]
+    \centering
+    \subfloat[Une rupture d'anévrisme.]{{\label{Robin:geoex2}\includegraphics[scale=0.5]{anevrisme1.jpg}}}
+    \subfloat[Le stent "extension médicale".]{\label{Robin:geoex1}\includegraphics[scale=0.5]{sng1.png}}
+    \caption{Modélisation d'un anévrisme.}
+     \label{Robin:ane}
+\end{figure}
+Lorsqu'un tel anévrisme se rompt, cela provoque un saignement interne (Figures \ref{Robin:shema1} et \ref{Robin:ane}). Pour prévenir leur rupture, une extension médicale appelée stent (Figure \ref{Robin:geoex1}) est placée à l'entrée du sac anévrismal pour réduire le flux à l'intérieur grâce à une fine tresse métallique. Mathématiquement, cela est modélisé comme une surface poreuse avec une résistivité $R$, d'où la condition aux limites de type Robin.
+% Pour plus de détails, nous nous référons à \cite{Quarteroni2003AnalysisSimulations,Vignon-Clementel2006OutflowArteries}.
+\subsection*{Application au flux d'air dans les poumons}\label{Robin:ecol}
+Les voies respiratoires du système respiratoire ont deux fonctions principales : la conduction de l'air et l'échange gazeux entre l'environnement extérieur et le sang. Le modèle que nous allons discuter, introduit pour la première fois dans \cite{Baffico2010MultiscaleTract}, se concentre sur le flux d'air à l'intérieur des voies respiratoires.
+
+La géométrie de l'arbre bronchique est complexe, avec la trachée se divisant en deux bronches, une pour chaque poumon, et chaque bronche se divisant à nouveau en deux, et ainsi de suite pendant environ 23 générations. Cette complexité rend impossible la réalisation de simulations numériques sur l'ensemble de l'arbre, c'est pourquoi le modèle considère le flux d'air dans un domaine simplifié correspondant aux premières générations de l'arbre bronchique. Cette troncation du domaine introduit des frontières artificielles, et comme les mesures de la vitesse ou de la pression in vivo ne sont pas disponibles, il est nécessaire de développer un modèle qui décrit la physique se produisant dans la partie distale de l'arbre respiratoire. Pour ce faire, des conditions aux limites sont imposées pour prendre en compte la dissipation d'énergie dans les bronches inférieures. L'utilisation de frontières artificielles est une méthode courante pour simplifier un mécanisme complexe à des fins de modélisation et se retrouve également dans les modèles du système cardiovasculaire \cite{Quarteroni2003AnalysisSimulations,Vignon-Clementel2006OutflowArteries}.
+\begin{figure}[ht]
+    \centering
+    \subfloat[\centering Modélisation des poumons humains par E. R. Weibel.]{
+    \includegraphics[scale=0.4]{poumons.png}
+    \label{Robin:pom}}
+    \subfloat[\centering Arbre bronchique reconstruit numériquement.]{
+    \includegraphics[scale=0.3]{hh.png}}
+    \caption{Poumons humains et arbre bronchique.}
+    \label{Robin:pom1}
+\end{figure}
+
+Le processus de restauration de l'air dans les poumons grâce à l'action des muscles respiratoires, le diaphragme étant le principal muscle utilisé, est appelé ventilation pulmonaire ou respiration. Le système respiratoire peut être divisé en trois parties pour expliquer la ventilation, chacune nécessitant un modèle mécanique distinct. Nous nous intéressons à la partie \textit{Proximale} $\approx$ (de 1 à 10 générations) : dans cette région, les équations de Navier-Stokes incompressibles sont utilisées pour décrire le flux d'air.
+La figure suivante \ref{Robin:pom1} illustre schématiquement cette décomposition. Certaines pathologies pulmonaires peuvent être détectées en identifiant certaines caractéristiques, telles que la résistance au flux d'air dans les bronches, à partir de la variation de la pression de l'air dans les poumons. Ces paramètres sont généralement modélisés par des constantes impliquées dans des conditions aux limites de type Robin pour un système de Stokes non stationnaire.
+
+\subsection*{Applications du problème inverse d'imagerie en élasticité (EIIP)}
+L'étude des variations des propriétés élastiques des tissus revêt un grand intérêt dans l'EIIP.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Capture_d_écran_du_2023-10-11_17-27-36-removebg-preview.png}
+\end{figure}
+  \begin{itemize}
+    \item[$\rightsquigarrow$]  La comparaison des propriétés élastiques des tissus sains et malades permet la \textcolor{red}{détection des tumeurs} à l'intérieur du corps.
+    \item[$\rightsquigarrow$] Le principe consiste à appliquer une petite compression externe au tissu afin de mesurer le champ de déplacement ou son mouvement global.
+    \item[$\rightsquigarrow$] À partir de cette mesure, une tumeur peut être détectée par \textcolor{red}{reconstruction du module de Young}.
+\end{itemize}\vspace{0.25cm}
+\printbibliography
+\end{document}

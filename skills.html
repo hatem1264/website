@@ -1,95 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAYENI Hatem - Skills</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
-    <canvas id="background-canvas"></canvas>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="profile">
-                <img src="profile_pic.png" alt="Profile Picture" class="profile-img">
-                <h1><i class="fas fa-id-badge"></i>&nbsp;ZAYENI Hatem</h1>
-                <p data-en="PhD in Applied Mathematics" data-fr="Doctorat en Mathématiques Appliquées">PhD in Applied Mathematics</p>
-            </div>
-            <nav>
+<main class="content">
+    <section id="skills">
+        <h2><i class="fas fa-cogs"></i>&nbsp;<span>Compétences & Certifications</span></h2>
+        
+        <h3>Informatique & Calcul Scientifique</h3>
+        <ul>
+            <li><strong>Informatique/Bureautique & Outils :</strong> <a href="https://www.linux.org/" target="_blank">Linux</a>, <a href="https://www.microsoft.com/en-us/windows" target="_blank">Windows</a>, <a href="https://git-scm.com/" target="_blank">Git</a>, <a href="https://github.com/" target="_blank">GitHub</a>, <a href="https://www.office.com/" target="_blank">Microsoft Office</a>, <a href="https://www.latex-project.org/" target="_blank">LATEX</a></li>
+            <li><strong>Langages de Programmation :</strong> <a href="https://www.python.org/" target="_blank">Python</a>, C, C++, <a href="https://www.mathworks.com/products/matlab.html" target="_blank">MATLAB</a>, <a href="https://freefem.org/" target="_blank">FreeFem++</a>, <a href="https://www.r-project.org/" target="_blank">R</a></li>
+            <li><strong>Paquets Python :</strong>
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i>&nbsp;<span data-en="Home" data-fr="Accueil">Home</span></a></li>
-                    <li><a href="profile.html"><i class="fas fa-user"></i>&nbsp;<span data-en="Profile" data-fr="Profil">Profile</span></a></li>
-                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i>&nbsp;<span data-en="Education" data-fr="Formation">Education</span></a></li>
-                    <li><a href="skills.html"><i class="fas fa-cogs"></i>&nbsp;<span data-en="Skills" data-fr="Compétences">Skills</span></a></li>
-                    <li><a href="research.html"><i class="fas fa-flask"></i>&nbsp;<span data-en="Research" data-fr="Recherche">Research</span></a></li>
-                    <li><a href="publications.html"><i class="fas fa-book"></i>&nbsp;<span data-en="Publications" data-fr="Publications">Publications</span></a></li>
-                    <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i>&nbsp;<span data-en="Teaching" data-fr="Enseignement">Teaching</span></a></li>
-                    <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i>&nbsp;<span data-en="Contact" data-fr="Contact">Contact</span></a></li>
+                    <li><a href="https://fenicsproject.org/" target="_blank">FEniCS</a> : paquet de simulation par éléments finis basé sur Python.</li>
+                    <li><a href="https://getfem.org/" target="_blank">GetFEM</a> : paquet de simulation par éléments finis basé sur Python.</li>
+                    <li><a href="https://www.firedrakeproject.org/" target="_blank">Firedrake</a> : paquet de simulation par éléments finis basé sur Python.</li>
+                    <li><a href="https://hippylib.github.io/" target="_blank">hIPPYlib</a> : boîte à outils basée sur FEniCS pour résoudre des problèmes inverses déterministes et bayésiens gouvernés par des EDP.</li>
+                    <li><a href="https://www.dolfin-adjoint.org/pyadjoint/" target="_blank">pyadjoint</a> : cadre de différentiation algorithmique par surcharge d'opérateur pour Python.</li>
+                    <li><a href="https://github.com/nschloe/meshio" target="_blank">meshio</a> : paquet générateur de maillage Python.</li>
                 </ul>
-            </nav>
-            <div class="contact-info">
-                <a href="mailto:hatem.zayeni@unicaen.fr" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://github.com/hatem1264" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/zayeni-hatem-51ab61101/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://scholar.google.com/citations?user=fLQWpKAAAAAJ&hl=fr&oi=ao" target="_blank" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                <a href="https://orcid.org/0000-0002-5217-9618" target="_blank" class="contact-link"><i class="fab fa-orcid"></i> ORCID</a>
-            </div>
-            <div class="language-switcher">
-                <button id="lang-toggle" class="contact-link">EN / FR</button>
-            </div>
-        </aside>
-
-        <main class="content">
-            <section id="slideshow" class="slideshow-container">
-                <div class="slide fade">
-                    <img src="Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg">
-                    <div class="text">Intracranial Aneurysm Research</div>
-                </div>
-                <div class="slide fade">
-                    <img src="echog.jpg">
-                    <div class="text">Echography Analysis</div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </section>
-
-            <section id="skills">
-                <h2><i class="fas fa-cogs"></i>&nbsp;<span data-en="Skills" data-fr="Compétences">Skills</span></h2>
-                <h3 data-en="Languages" data-fr="Langues">Languages</h3>
-                <p data-en="French, English, Arabic (read, written, and spoken)" data-fr="Français, Anglais, Arabe (lu, écrit et parlé)">French, English, Arabic (read, written, and spoken)</p>
-                <h3 data-en="IT & Scientific Computing" data-fr="Informatique & Calcul Scientifique">IT & Scientific Computing</h3>
+            </li>
+            <li><strong>Autres Logiciels :</strong>
                 <ul>
-                    <li><strong><span data-en="Tools:" data-fr="Outils :">Tools:</span></strong> Linux, Windows, Git, GitHub, Microsoft Office, LaTeX</li>
-                    <li><strong><span data-en="Programming Languages:" data-fr="Langages de Programmation :">Programming Languages:</span></strong> Python, C, C++, MATLAB, FreeFem, R</li>
-                    <li><strong><span data-en="Simulation Packages:" data-fr="Logiciels de Simulation :">Simulation Packages:</span></strong> FEniCS, GetFEM, Firedrake, hIPPYlib, pyadjoint, Gmsh, meshio</li>
-                    <li><strong><span data-en="AI (Beginner):" data-fr="IA (Débutant) :">AI (Beginner):</span></strong> TensorFlow, Scikit-Learn, PyTorch, Keras</li>
-                    <li><strong><span data-en="Visualization:" data-fr="Visualisation :">Visualization:</span></strong> Gnuplot, ParaView</li>
+                    <li><a href="https://freefem.org/" target="_blank">FreeFEM</a> : solveur PDE par éléments finis avec langage spécifique au domaine intégré.</li>
+                    <li><a href="https://www.r-project.org/" target="_blank">R Statistiques</a> : le projet R pour le Calcul Statistique.</li>
+                    <li><a href="https://gmsh.info/" target="_blank">Gmsh</a> : générateur de maillage par éléments finis en trois dimensions avec des installations de pré- et post-traitement intégrées.</li>
                 </ul>
-            </section>
-        </main>
-    </div>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+            </li>
+            <li><strong>IA : Outils d'Intelligence Artificielle (débutant) :</strong> <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a>, <a href="https://scikit-learn.org/" target="_blank">Scikit Learn</a>, <a href="https://pytorch.org/" target="_blank">PyTorch</a>, <a href="https://keras.io/" target="_blank">Keras</a>.</li>
+            <li><strong>Visualisation :</strong>
+                <ul>
+                    <li><a href="http://www.gnuplot.info/" target="_blank">Gnuplot</a> : utilitaire de graphiques portable commandé en ligne de commande.</li>
+                    <li><a href="https://www.paraview.org/" target="_blank">ParaView</a> : logiciel multiplateforme open source pour la visualisation scientifique interactive.</li>
+                </ul>
+            </li>
+        </ul>
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+        <h3>Certifications</h3>
+        <ul>
+            <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/d5a2b3e8a7f8c7d4e5c6a1b0f3d1e4c5a1b2c3d4" target="_blank">Career Track: Data Scientist in Python - DataCamp, Inc.</a> 2025 - En cours</li>
+            <li><a href="https://courses.nvidia.com/certificates/f3b2a1c1b2a34c1a8b2c3d4e5f6a7b8c" target="_blank">Getting Started with Deep Learning - NVIDIA, Inc.</a> 2024</li>
+            <li><a href="https://courses.nvidia.com/certificates/a1b2c3d4e5f64a1b8c2d3e4f5a6b7c8d" target="_blank">Introduction to Physics-informed Machine Learning with Modulus - NVIDIA, Inc.</a> 2024</li>
+            <li><a href="https://courses.nvidia.com/certificates/b2c3d4e5f6a74b1c8d2e3f4a5b6c7d8e" target="_blank">Disaster Risk Monitoring Using Satellite Imagery - NVIDIA, Inc.</a> 2024</li>
+            <li><a href="https://www.fun-mooc.fr/fr/attestation-de-suivi/D4E5F6A7B8C9D4E5F6A7B8C9D4E5F6A7" target="_blank">FIDLE : Introduction au Deep Learning CNRS - CNRS, Inc.</a> 2024</li>
+            <li><a href="https://www.datacamp.com/statement-of-accomplishment/course/a1b2c3d4e5f6a7b8c9d4e5f6a7b8c9d4" target="_blank">Intermediate Importing Data in Python - DataCamp, Inc.</a> 2024</li>
+            <li><a href="https://www.datacamp.com/statement-of-accomplishment/course/b2c3d4e5f6a7b8c9d4e5f6a7b8c9d4e5" target="_blank">Preprocessing for Machine Learning in Python - DataCamp, Inc.</a> 2024</li>
+            <li><a href="https://www.datacamp.com/statement-of-accomplishment/course/c3d4e5f6a7b8c9d4e5f6a7b8c9d4e5f6" target="_blank">Developing Python Packages - DataCamp, Inc.</a> 2024</li>
+            <li><a href="https://www.datacamp.com/statement-of-accomplishment/course/d4e5f6a7b8c9d4e5f6a7b8c9d4e5f6a7" target="_blank">Machine Learning for Business - DataCamp, Inc.</a> 2024</li>
+            <li><a href="https://www.educative.io/verify-certificate/A1B2C3D4E5F6A7B8C9D4E5F6A7B8C9D4" target="_blank">Python for Scientists and Engineers - Educative, Inc.</a> 2022</li>
+            <li><a href="https://www.esprit.tn/" target="_blank">Massai on Artificial Intelligence - Esprit, Inc.</a> 2022</li>
+            <li><a href="https://university.mongodb.com/course_completion/a1b2c3d4-e5f6-a7b8-c9d4-e5f6a7b8c9d4" target="_blank">Connecting to a MongoDB Database - MongoDB, Inc.</a> 2022</li>
+            <li><a href="https://university.mongodb.com/course_completion/b2c3d4e5-f6a7-b8c9-d4e5-f6a7b8c9d4e5" target="_blank">Getting Started with MongoDB Atlas - MongoDB, Inc.</a> 2022</li>
+            <li><a href="https://university.mongodb.com/course_completion/c3d4e5f6-a7b8-c9d4-e5f6-a7b8c9d4e5f6" target="_blank">MongoDB CRUD Operations : Insert and Find Documents - MongoDB, Inc.</a> 2022</li>
+            <li><a href="https://university.mongodb.com/course_completion/d4e5f6a7-b8c9-d4e5-f6a7-b8c9d4e5f6a7" target="_blank">Overview of MongoDB and the Document Model - MongoDB, Inc.</a> 2022</li>
+        </ul>
 
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex-1].style.display = "block";
-        }
-    </script>
-    <script src="background.js"></script>
-    <script src="language.js"></script>
-</body>
-</html>
+        <h3>Langues</h3>
+        <ul>
+            <li>Français : lu, écrit et parlé</li>
+            <li>Anglais : lu, écrit et parlé</li>
+            <li>Arabe : lu, écrit et parlé</li>
+        </ul>
+    </section>
+</main>

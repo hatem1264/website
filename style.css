@@ -2,7 +2,7 @@
 :root {
     --bg-color: #1c1c22; /* Dark charcoal/blue background */
     --fg-color: #e0e0e0; /* Light gray text for readability */
-    --primary-accent: #e67e22; /* Orange for headings */
+    --primary-accent: #e62222; /* Orange for headings */
     --secondary-accent: #3498db; /* Blue for links */
     --border-color: #3c3c44; /* Muted border color */
     --card-bg-color: #282830; /* Slightly lighter card background */
@@ -96,11 +96,6 @@ body {
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-}
-
-.content h2 {
-    font-size: 2em;
-    color: var(--primary-accent); /* Orange heading */
 }
 
 .slideshow-container {
@@ -244,17 +239,24 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.content h2, .content h3 {
+.content h2, .content h2 span {
+    font-size: 2em;
     font-family: var(--mono-font);
+    color: var(--primary-accent); /* Orange titles */
 }
 
-.entry, .publication {
+.content h3 {
+    font-family: var(--mono-font);
+    color: #025302; /* Mint green */
+}
+
+.publication {
     margin-bottom: 25px;
     padding-left: 15px;
     border-left: 2px solid var(--border-color);
 }
 
-.entry h3, .publication p:first-child {
+.publication p:first-child {
     font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 5px;
