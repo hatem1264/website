@@ -1,62 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Houssem ZAYENI - Researcher</title>
+    <title>ZAYENI Hatem - Docteur en mathématiques appliquées</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Houssem ZAYENI</h1>
-        <p>Researcher in Computer Science</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="placeholder.jpg" alt="Profile Picture" class="profile-img">
+                <h1>ZAYENI Hatem</h1>
+                <p>Docteur en mathématiques appliquées</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#recherche">Recherche</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#enseignement">Enseignement</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="mailto:hatem.zayeni@unicaen.fr" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/hatem1264" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/zayeni-hatem-51ab61101/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=fLQWpKAAAAAJ&hl=fr&oi=ao" target="_blank" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-5217-9618" target="_blank" class="contact-link"><i class="fab fa-orcid"></i> ORCID</a>
+            </div>
+        </aside>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate researcher in the field of computer science, with a focus on [Your Specific Area of Interest]. I am currently working at [Your Institution] and my research interests include [List a few of your research interests].
-        </p>
-    </section>
+        <main class="content">
+            <section id="profil">
+                <h2>Profil académique et scientifique</h2>
+                <p>
+                    Docteur en mathématiques appliquées, je suis spécialisé dans la régularisation des problèmes inverses mal posés et le développement d'outils numériques pour les résoudre. Par ailleurs, depuis l'obtention de mon doctorat, je m'engage activement dans l'exploration et le développement de compétences en Intelligence Artificielle (IA) appliquée aux problèmes de modélisation mathématique. Enfin, mon parcours, bien qu'international, témoigne d'une solide maîtrise des méthodes pédagogiques adaptées au système universitaire français, renforcée par mon poste actuel d’A.T.E.R. (Attaché Temporaire d’Enseignement et de Recherche) à l’Université de Caen-Normandie. En résumé, mon quotidien allie recherche scientifique et enseignement universitaire, avec pour objectif de contribuer à des projets interdisciplinaires combinant modélisation mathématique, programmation scientifique et pédagogie.
+                </p>
+            </section>
 
-    <section id="research">
-        <h2>Research</h2>
-        <p>
-            My research focuses on [Briefly describe your main research area]. I am particularly interested in [Mention a specific problem or question you are addressing]. Some of my ongoing projects include:
-        </p>
-        <ul>
-            <li>[Project 1 Name] - [Briefly describe the project]</li>
-            <li>[Project 2 Name] - [Briefly describe the project]</li>
-            <li>[Project 3 Name] - [Briefly describe the project]</li>
-        </ul>
-    </section>
+            <section id="formation">
+                <h2>Formation académique</h2>
+                <div class="entry">
+                    <h3>Doctorat : Mathématiques appliquées (mention : très honorable)</h3>
+                    <p class="date">Déc. 2023</p>
+                    <p>ENIT : École Nationale d'Ingénieurs de Tunis et UNICAEN : UFR des sciences – Université de Caen Normandie</p>
+                    <p><strong>Sujet de la thèse :</strong> <em>Data assimilation and boundary data completion for the Stokes system and applications</em></p>
+                </div>
+                <div class="entry">
+                    <h3>M2 : Mathématiques (major)</h3>
+                    <p class="date">Juin 2020</p>
+                    <p>ENIT: École Nationale d'Ingénieurs de Tunis</p>
+                </div>
+                 <div class="entry">
+                    <h3>Licence : Mathématiques fondamentales et appliquées</h3>
+                    <p class="date">Juin 2017</p>
+                    <p>FST : Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis</p>
+                </div>
+            </section>
 
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li>[Publication 1]</li>
-            <li>[Publication 2]</li>
-            <li>[Publication 3]</li>
-        </ul>
-    </section>
+            <section id="competences">
+                <h2>Compétences</h2>
+                <h3>Langues</h3>
+                <p>Français, Anglais, Arabe (lu, écrit et parlé)</p>
+                <h3>Informatique & Calcul Scientifique</h3>
+                <ul>
+                    <li><strong>Outils :</strong> Linux, Windows, Git, GitHub, Microsoft Office, LaTeX</li>
+                    <li><strong>Langages :</strong> Python, C, C++, MATLAB, FreeFem, R</li>
+                    <li><strong>Paquets de simulation :</strong> FEniCS, GetFEM, Firedrake, hIPPYlib, pyadjoint, Gmsh, meshio</li>
+                    <li><strong>IA (débutant) :</strong> TensorFlow, Scikit-Learn, PyTorch, Keras</li>
+                    <li><strong>Visualisation :</strong> Gnuplot, ParaView</li>
+                </ul>
+            </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            You can reach me at [Your Email Address].
-        </p>
-    </section>
+            <section id="recherche">
+                <h2>Thèmes de recherche</h2>
+                <ul>
+                    <li>Problèmes inverses et assimilation/complétion de données</li>
+                    <li>Identification de paramètres dans les modèles mathématiques</li>
+                    <li>Modélisation mathématique et calculs scientifiques</li>
+                    <li>Intelligence Artificielle (IA) et Mathématiques</li>
+                </ul>
+            </section>
 
-    <footer>
-        <p>&copy; 2023 Houssem ZAYENI</p>
-    </footer>
+            <section id="publications">
+                <h2>Productions scientifiques</h2>
+                <div class="publication">
+                    <p><strong>[1] Fading regularization method for the stationary Stokes data assimilation problem.</strong> (Q1)</p>
+                    <p><em>Hatem Zayeni, Amel Ben Abda, Franck Delvare</em></p>
+                    <p>Computer Methods in Applied Mechanics and Engineering, 2024</p>
+                    <a href="https://doi.org/10.1016/j.cma.2024.117450" target="_blank">DOI: 10.1016/j.cma.2024.117450</a>
+                </div>
+                <div class="publication">
+                    <p><strong>[2] Fading regularization MFS algorithm for the Cauchy problem associated with the two-dimensional Stokes equations.</strong> (Q1)</p>
+                    <p><em>Hatem Zayeni, Amel Ben Abda, Franck Delvare, Faten Khayat</em></p>
+                    <p>Numerical Algorithms, 2023</p>
+                    <a href="https://link.springer.com/article/10.1007/s11075-023-01543-8" target="_blank">DOI: 10.1007/s11075-023-01543-8</a>
+                </div>
+                <div class="publication">
+                    <p><strong>[3] Levenberg-Marquardt method for identifying Young's modulus of the elasticity imaging inverse problem.</strong> (Q1 en 2022)</p>
+                    <p><em>Talaat Abdelhamid, F. Khayat, H. Zayeni, Rongliang Chen</em></p>
+                    <p>Electronic Research Archive, 2022</p>
+                    <a href="https://doi.org/10.3934/era.2022079" target="_blank">DOI: 10.3934/era.2022079</a>
+                </div>
+                <h4>Articles en cours</h4>
+                <ul>
+                    <li>Simultaneous heat source identification and thermal field reconstruction... (2024)</li>
+                    <li>An alternative RG-FADING-MFS Algorithm for the inverse point sources Cauchy-Stokes equations</li>
+                    <li>Identification of Robin Coefficient for non-stationary Stokes equations...</li>
+                    <li>Analysis of a mixed DG method for the second order curl-curl operator</li>
+                </ul>
+            </section>
+
+            <section id="enseignement">
+                <h2>Activités d'enseignement</h2>
+                <p>Attaché Temporaire d’Enseignement et de Recherche (A.T.E.R.) à l’Université de Caen-Normandie (2024-2025).</p>
+                <ul>
+                    <li>Algorithmique (L2 Miashs)</li>
+                    <li>Analyse et applications informatiques (L2 Maths)</li>
+                    <li>Outils mathématiques (L1 Sciences de la Vie)</li>
+                    <li>Mathématiques appliquées à l’économie et la gestion (L1 AES)</li>
+                </ul>
+                <p>Expériences passées à l'École Nationale d'Ingénieurs de Tunis (2023-2024).</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p><strong>Email :</strong> <a href="mailto:hatem.zayeni@unicaen.fr">hatem.zayeni@unicaen.fr</a></p>
+                <p><strong>Adresse :</strong></p>
+                <address>
+                    Laboratoire de mathématiques Nicolas Oresme (LMNO)<br>
+                    Département de mathématiques et informatique, UFR des sciences<br>
+                    Université de Caen Normandie<br>
+                    14032 CAEN cedex 5, France
+                </address>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 ZAYENI Hatem</p>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
