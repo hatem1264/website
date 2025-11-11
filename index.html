@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAYENI Hatem - Docteur en mathématiques appliquées</title>
+    <title>ZAYENI Hatem - PhD in Applied Mathematics</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <aside class="sidebar">
             <div class="profile">
-                <img src="placeholder.jpg" alt="Profile Picture" class="profile-img">
+                <img src="echog.jpg" alt="Profile Picture" class="profile-img">
                 <h1>ZAYENI Hatem</h1>
-                <p>Docteur en mathématiques appliquées</p>
+                <p>PhD in Applied Mathematics</p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#profil">Profil</a></li>
-                    <li><a href="#formation">Formation</a></li>
-                    <li><a href="#competences">Compétences</a></li>
-                    <li><a href="#recherche">Recherche</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#research">Research</a></li>
                     <li><a href="#publications">Publications</a></li>
-                    <li><a href="#enseignement">Enseignement</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -36,59 +37,72 @@
         </aside>
 
         <main class="content">
-            <section id="profil">
-                <h2>Profil académique et scientifique</h2>
+            <section id="slideshow" class="slideshow-container">
+                <div class="slide fade">
+                    <img src="Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg">
+                    <div class="text">Intracranial Aneurysm Research</div>
+                </div>
+                <div class="slide fade">
+                    <img src="echog.jpg">
+                    <div class="text">Echography Analysis</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+
+            <section id="profile">
+                <h2>Academic and Scientific Profile</h2>
                 <p>
-                    Docteur en mathématiques appliquées, je suis spécialisé dans la régularisation des problèmes inverses mal posés et le développement d'outils numériques pour les résoudre. Par ailleurs, depuis l'obtention de mon doctorat, je m'engage activement dans l'exploration et le développement de compétences en Intelligence Artificielle (IA) appliquée aux problèmes de modélisation mathématique. Enfin, mon parcours, bien qu'international, témoigne d'une solide maîtrise des méthodes pédagogiques adaptées au système universitaire français, renforcée par mon poste actuel d’A.T.E.R. (Attaché Temporaire d’Enseignement et de Recherche) à l’Université de Caen-Normandie. En résumé, mon quotidien allie recherche scientifique et enseignement universitaire, avec pour objectif de contribuer à des projets interdisciplinaires combinant modélisation mathématique, programmation scientifique et pédagogie.
+                    As a Doctor in Applied Mathematics, I specialize in the regularization of ill-posed inverse problems and the development of numerical tools to solve them. Since obtaining my PhD, I have been actively exploring and developing skills in Artificial Intelligence (AI) applied to mathematical modeling problems. My international background is complemented by a strong command of teaching methods adapted to the French university system, reinforced by my current position as a Temporary Teaching and Research Fellow (A.T.E.R.) at the University of Caen-Normandie. In summary, my daily work combines scientific research and university teaching, with the goal of contributing to interdisciplinary projects that merge mathematical modeling, scientific programming, and pedagogy.
                 </p>
             </section>
 
-            <section id="formation">
-                <h2>Formation académique</h2>
+            <section id="education">
+                <h2>Academic Background</h2>
                 <div class="entry">
-                    <h3>Doctorat : Mathématiques appliquées (mention : très honorable)</h3>
-                    <p class="date">Déc. 2023</p>
-                    <p>ENIT : École Nationale d'Ingénieurs de Tunis et UNICAEN : UFR des sciences – Université de Caen Normandie</p>
-                    <p><strong>Sujet de la thèse :</strong> <em>Data assimilation and boundary data completion for the Stokes system and applications</em></p>
+                    <h3>PhD: Applied Mathematics (Grade: Very Honorable)</h3>
+                    <p class="date">Dec. 2023</p>
+                    <p>ENIT: National School of Engineers of Tunis and UNICAEN: UFR of Sciences – University of Caen Normandie</p>
+                    <p><strong>Thesis Topic:</strong> <em>Data assimilation and boundary data completion for the Stokes system and applications</em></p>
                 </div>
                 <div class="entry">
-                    <h3>M2 : Mathématiques (major)</h3>
-                    <p class="date">Juin 2020</p>
-                    <p>ENIT: École Nationale d'Ingénieurs de Tunis</p>
+                    <h3>M2: Mathematics (Major)</h3>
+                    <p class="date">June 2020</p>
+                    <p>ENIT: National School of Engineers of Tunis</p>
                 </div>
                  <div class="entry">
-                    <h3>Licence : Mathématiques fondamentales et appliquées</h3>
-                    <p class="date">Juin 2017</p>
-                    <p>FST : Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis</p>
+                    <h3>Bachelor's Degree: Fundamental and Applied Mathematics</h3>
+                    <p class="date">June 2017</p>
+                    <p>FST: Faculty of Mathematical, Physical and Natural Sciences of Tunis</p>
                 </div>
             </section>
 
-            <section id="competences">
-                <h2>Compétences</h2>
-                <h3>Langues</h3>
-                <p>Français, Anglais, Arabe (lu, écrit et parlé)</p>
-                <h3>Informatique & Calcul Scientifique</h3>
+            <section id="skills">
+                <h2>Skills</h2>
+                <h3>Languages</h3>
+                <p>French, English, Arabic (read, written, and spoken)</p>
+                <h3>IT & Scientific Computing</h3>
                 <ul>
-                    <li><strong>Outils :</strong> Linux, Windows, Git, GitHub, Microsoft Office, LaTeX</li>
-                    <li><strong>Langages :</strong> Python, C, C++, MATLAB, FreeFem, R</li>
-                    <li><strong>Paquets de simulation :</strong> FEniCS, GetFEM, Firedrake, hIPPYlib, pyadjoint, Gmsh, meshio</li>
-                    <li><strong>IA (débutant) :</strong> TensorFlow, Scikit-Learn, PyTorch, Keras</li>
-                    <li><strong>Visualisation :</strong> Gnuplot, ParaView</li>
+                    <li><strong>Tools:</strong> Linux, Windows, Git, GitHub, Microsoft Office, LaTeX</li>
+                    <li><strong>Programming Languages:</strong> Python, C, C++, MATLAB, FreeFem, R</li>
+                    <li><strong>Simulation Packages:</strong> FEniCS, GetFEM, Firedrake, hIPPYlib, pyadjoint, Gmsh, meshio</li>
+                    <li><strong>AI (Beginner):</strong> TensorFlow, Scikit-Learn, PyTorch, Keras</li>
+                    <li><strong>Visualization:</strong> Gnuplot, ParaView</li>
                 </ul>
             </section>
 
-            <section id="recherche">
-                <h2>Thèmes de recherche</h2>
+            <section id="research">
+                <h2>Research Topics</h2>
                 <ul>
-                    <li>Problèmes inverses et assimilation/complétion de données</li>
-                    <li>Identification de paramètres dans les modèles mathématiques</li>
-                    <li>Modélisation mathématique et calculs scientifiques</li>
-                    <li>Intelligence Artificielle (IA) et Mathématiques</li>
+                    <li>Inverse problems and data assimilation/completion</li>
+                    <li>Parameter identification in mathematical models</li>
+                    <li>Mathematical modeling and scientific computing</li>
+                    <li>Artificial Intelligence (AI) and Mathematics</li>
                 </ul>
             </section>
 
             <section id="publications">
-                <h2>Productions scientifiques</h2>
+                <h2>Scientific Productions</h2>
                 <div class="publication">
                     <p><strong>[1] Fading regularization method for the stationary Stokes data assimilation problem.</strong> (Q1)</p>
                     <p><em>Hatem Zayeni, Amel Ben Abda, Franck Delvare</em></p>
@@ -102,12 +116,12 @@
                     <a href="https://link.springer.com/article/10.1007/s11075-023-01543-8" target="_blank">DOI: 10.1007/s11075-023-01543-8</a>
                 </div>
                 <div class="publication">
-                    <p><strong>[3] Levenberg-Marquardt method for identifying Young's modulus of the elasticity imaging inverse problem.</strong> (Q1 en 2022)</p>
+                    <p><strong>[3] Levenberg-Marquardt method for identifying Young's modulus of the elasticity imaging inverse problem.</strong> (Q1 in 2022)</p>
                     <p><em>Talaat Abdelhamid, F. Khayat, H. Zayeni, Rongliang Chen</em></p>
                     <p>Electronic Research Archive, 2022</p>
                     <a href="https://doi.org/10.3934/era.2022079" target="_blank">DOI: 10.3934/era.2022079</a>
                 </div>
-                <h4>Articles en cours</h4>
+                <h4>Work in Progress</h4>
                 <ul>
                     <li>Simultaneous heat source identification and thermal field reconstruction... (2024)</li>
                     <li>An alternative RG-FADING-MFS Algorithm for the inverse point sources Cauchy-Stokes equations</li>
@@ -116,26 +130,26 @@
                 </ul>
             </section>
 
-            <section id="enseignement">
-                <h2>Activités d'enseignement</h2>
-                <p>Attaché Temporaire d’Enseignement et de Recherche (A.T.E.R.) à l’Université de Caen-Normandie (2024-2025).</p>
+            <section id="teaching">
+                <h2>Teaching Activities</h2>
+                <p>Temporary Teaching and Research Fellow (A.T.E.R.) at the University of Caen-Normandie (2024-2025).</p>
                 <ul>
-                    <li>Algorithmique (L2 Miashs)</li>
-                    <li>Analyse et applications informatiques (L2 Maths)</li>
-                    <li>Outils mathématiques (L1 Sciences de la Vie)</li>
-                    <li>Mathématiques appliquées à l’économie et la gestion (L1 AES)</li>
+                    <li>Algorithmic (L2 Miashs)</li>
+                    <li>Analysis and computer applications (L2 Maths)</li>
+                    <li>Mathematical tools (L1 Life Sciences)</li>
+                    <li>Applied mathematics for economics and management (L1 AES)</li>
                 </ul>
-                <p>Expériences passées à l'École Nationale d'Ingénieurs de Tunis (2023-2024).</p>
+                <p>Past experiences at the National School of Engineers of Tunis (2023-2024).</p>
             </section>
 
             <section id="contact">
                 <h2>Contact</h2>
-                <p><strong>Email :</strong> <a href="mailto:hatem.zayeni@unicaen.fr">hatem.zayeni@unicaen.fr</a></p>
-                <p><strong>Adresse :</strong></p>
+                <p><strong>Email:</strong> <a href="mailto:hatem.zayeni@unicaen.fr">hatem.zayeni@unicaen.fr</a></p>
+                <p><strong>Address:</strong></p>
                 <address>
-                    Laboratoire de mathématiques Nicolas Oresme (LMNO)<br>
-                    Département de mathématiques et informatique, UFR des sciences<br>
-                    Université de Caen Normandie<br>
+                    Nicolas Oresme Laboratory of Mathematics (LMNO)<br>
+                    Department of Mathematics and Computer Science, UFR of Sciences<br>
+                    University of Caen Normandie<br>
                     14032 CAEN cedex 5, France
                 </address>
             </section>
@@ -145,5 +159,24 @@
             </footer>
         </main>
     </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
 </body>
 </html>
