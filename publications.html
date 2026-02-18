@@ -1,51 +1,106 @@
-<main class="content">
-    <section id="publications">
-        <h2><i class="fas fa-book"></i>&nbsp;<span>Productions Scientifiques</span></h2>
-
-        <div class="entry">
-            <h3>Publications</h3>
-            
-            <div class="publication">
-                <p><strong>[1] Fading regularization method for the stationary Stokes data assimilation problem, Quartile Q1.</strong></p>
-                <p><em>Hatem Zayeni, Amel Ben Abda, Franck Delvare</em></p>
-                <p>Computer Methods in Applied Mechanics and Engineering 2024, <a href="https://doi.org/10.1016/j.cma.2024.117450" target="_blank">https://doi.org/10.1016/j.cma.2024.117450</a></p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAYENI Hatem - Publications</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile_pic.png" alt="Profile Picture" class="profile-img">
+                <h1><i class="fas fa-id-badge"></i>&nbsp;ZAYENI Hatem</h1>
+                <p>Post-doctorat en Mathématiques Appliquées</p>
             </div>
-
-            <div class="publication">
-                <p><strong>[2] Fading regularization MFS algorithm for the Cauchy problem associated with the two-dimensional Stokes equations, Quartile Q1.</strong></p>
-                <p><em>Hatem Zayeni, Amel Ben Abda, Franck Delvare, Faten Khayat</em></p>
-                <p>Numerical Algorithms 2023, <a href="https://doi.org/10.1007/s11075-023-01543-8" target="_blank">doi.org/10.1007/s11075-023-01543-8</a></p>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-user"></i>&nbsp;<span>Profil</span></a></li>
+                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i>&nbsp;<span>Formation</span></a></li>
+                    <li><a href="skills.html"><i class="fas fa-cogs"></i>&nbsp;<span>Compétences</span></a></li>
+                    <li><a href="research.html"><i class="fas fa-flask"></i>&nbsp;<span>Recherche</span></a></li>
+                    <li><a href="publications.html"><i class="fas fa-book"></i>&nbsp;<span>Publications</span></a></li>
+                    <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i>&nbsp;<span>Enseignement</span></a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i>&nbsp;<span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="mailto:hatem.zayeni@unicaen.fr" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/hatem1264" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/zayeni-hatem-51ab61101/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=fLQWpKAAAAAJ&hl=fr&oi=ao" target="_blank" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-5217-9618" target="_blank" class="contact-link"><i class="fab fa-orcid"></i> ORCID</a>
             </div>
+        </aside>
 
-            <div class="publication">
-                <p><strong>[3] Levenberg-Marquardt method for identifying Young's modulus of the elasticity imaging inverse problem, Quartile Q1 en 2022.</strong></p>
-                <p><em>Talaat Abdelhamid, F. Khayat, H. Zayeni, Rongliang Chen</em></p>
-                <p>Electronic Research Archive, 2022, 30(4): 1532-1557, <a href="https://doi.org/10.3934/era.2022079" target="_blank">doi:10.3934/era.2022079</a></p>
-            </div>
-        </div>
+        <main class="content">
+            <section id="slideshow" class="slideshow-container">
+                <div class="slide fade">
+                    <img src="Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg">
+                    <div class="text">Recherche sur les anévrismes intracrâniens</div>
+                </div>
+                <div class="slide fade">
+                    <img src="echog.jpg">
+                    <div class="text">Analyse d'échographie</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
 
-        <div class="entry">
-            <h3>en cours de travail et Articles soumis</h3>
-            
-            <div class="publication">
-                <p><strong>[4] Simultaneous heat source identification and thermal field reconstruction using the fading regularization method applied to noisy experimental data</strong></p>
-                <p><em>Hatem Zayeni, Jean-Luc Hanus, Franck Delvare, Laëtitia Caillé, Amel Ben Abda</em>, 2024 (en cours)</p>
-            </div>
+            <section id="publications">
+                <h2><i class="fas fa-book"></i>&nbsp;<span>Productions Scientifiques</span></h2>
+                <div class="publication">
+                    <p><strong>[1] Méthode de régularisation par évanouissement pour le problème d'assimilation de données de Stokes stationnaire.</strong> (Q1)</p>
+                    <p><em>Hatem Zayeni, Amel Ben Abda, Franck Delvare</em></p>
+                    <p>Computer Methods in Applied Mechanics and Engineering, 2024</p>
+                    <a href="https://doi.org/10.1016/j.cma.2024.117450" target="_blank">DOI: 10.1016/j.cma.2024.117450</a>
+                </div>
+                <div class="publication">
+                    <p><strong>[2] Algorithme MFS de régularisation par évanouissement pour le problème de Cauchy associé aux équations de Stokes bidimensionnelles.</strong> (Q1)</p>
+                    <p><em>Hatem Zayeni, Amel Ben Abda, Franck Delvare, Faten Khayat</em></p>
+                    <p>Numerical Algorithms, 2023</p>
+                    <a href="https://link.springer.com/article/10.1007/s11075-023-01543-8" target="_blank">DOI: 10.1007/s11075-023-01543-8</a>
+                </div>
+                <div class="publication">
+                    <p><strong>[3] Méthode de Levenberg-Marquardt pour l'identification du module de Young du problème inverse d'imagerie d'élasticité.</strong> (Q1 in 2022)</p>
+                    <p><em>Talaat Abdelhamid, F. Khayat, H. Zayeni, Rongliang Chen</em></p>
+                    <p>Electronic Research Archive, 2022</p>
+                    <a href="https://doi.org/10.3934/era.2022079" target="_blank">DOI: 10.3934/era.2022079</a>
+                </div>
+                <h4>Travaux en cours</h4>
+                <ul>
+                    <li>Identification simultanée de source de chaleur et reconstruction de champ thermique... (2024)</li>
+                    <li>Un algorithme alternatif RG-FADING-MFS pour les équations de Cauchy-Stokes inverses à sources ponctuelles</li>
+                    <li>Identification du coefficient de Robin pour les équations de Stokes non stationnaires...</li>
+                    <li>Analyse d'une méthode DG mixte pour l'opérateur rotationnel-rotationnel de second ordre</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-            <div class="publication">
-                <p><strong>[5] An alternative RG-FADING-MFS Algorithm for the inverse point sources Cauchy-Stokes equations</strong></p>
-                <p><em>Hatem Zayeni, Amel Ben Abda, Franck Delvare</em>, (en cours)</p>
-            </div>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-            <div class="publication">
-                <p><strong>[6] Identification of Robin Coefficient for non-stationary Stokes equations Using the Levenberg-Marquardt Method</strong></p>
-                <p><em>Hatem Zayeni & Faten Khayat</em>, (en cours)</p>
-            </div>
-
-            <div class="publication">
-                <p><strong>[7] Analysis of a mixed DG method for the second order curl-curl operator</strong></p>
-                <p><em>Sayed Sayari & Hatem Zayeni</em>, (en cours)</p>
-            </div>
-        </div>
-    </section>
-</main>
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+    <script src="background.js"></script>
+    <script src="language.js"></script>
+</body>
+</html>

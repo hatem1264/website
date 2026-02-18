@@ -1,29 +1,87 @@
-<main class="content">
-    <section id="research">
-        <h2><i class="fas fa-flask"></i>&nbsp;<span>Thèmes de Recherche</span></h2>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAYENI Hatem - Recherche</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile_pic.png" alt="Profile Picture" class="profile-img">
+                <h1><i class="fas fa-id-badge"></i>&nbsp;ZAYENI Hatem</h1>
+                <p>Post-doctorat en Mathématiques Appliquées</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-user"></i>&nbsp;<span>Profil</span></a></li>
+                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i>&nbsp;<span>Formation</span></a></li>
+                    <li><a href="skills.html"><i class="fas fa-cogs"></i>&nbsp;<span>Compétences</span></a></li>
+                    <li><a href="research.html"><i class="fas fa-flask"></i>&nbsp;<span>Recherche</span></a></li>
+                    <li><a href="publications.html"><i class="fas fa-book"></i>&nbsp;<span>Publications</span></a></li>
+                    <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i>&nbsp;<span>Enseignement</span></a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i>&nbsp;<span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="mailto:hatem.zayeni@unicaen.fr" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/hatem1264" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/zayeni-hatem-51ab61101/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=fLQWpKAAAAAJ&hl=fr&oi=ao" target="_blank" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-5217-9618" target="_blank" class="contact-link"><i class="fab fa-orcid"></i> ORCID</a>
+            </div>
+        </aside>
 
-        <div class="entry">
-            <h3>THÈME 1 : PROBLÈMES INVERSES</h3>
-            <ul>
-                <li>(1) Assimilation de données dans les modèles mathématiques : l'assimilation de données (Data Assimilation, DA) est un outil puissant des mathématiques appliquées...</li>
-                <li>(2) Complétion de données dans les modèles mathématiques : les problèmes de complétion de données se rencontrent dans de nombreux domaines de la physique...</li>
-                <li>(3) Identification de paramètres dans les modèles mathématiques : l'identification de paramètres concerne le processus de détermination des paramètres inconnus...</li>
-            </ul>
-        </div>
+        <main class="content">
+            <section id="slideshow" class="slideshow-container">
+                <div class="slide fade">
+                    <img src="Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg">
+                    <div class="text">Recherche sur les anévrismes intracrâniens</div>
+                </div>
+                <div class="slide fade">
+                    <img src="echog.jpg">
+                    <div class="text">Analyse d'échographie</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
 
-        <div class="entry">
-            <h3>THÈME 2 : MODÉLISATION MATHÉMATIQUE ET CALCULS SCIENTIFIQUES</h3>
-            <ul>
-                <li>(1) La modélisation mathématique : la modélisation mathématique consiste à créer des représentations mathématiques de systèmes ou de phénomènes...</li>
-                <li>(2) Calculs scientifiques : les calculs scientifiques font référence à l’utilisation de méthodes mathématiques et de techniques de calcul...</li>
-            </ul>
-        </div>
+            <section id="research">
+                <h2><i class="fas fa-flask"></i>&nbsp;<span>Thèmes de Recherche</span></h2>
+                <ul>
+                    <li>Problèmes inverses et assimilation/complétion de données</li>
+                    <li>Identification de paramètres dans les modèles mathématiques</li>
+                    <li>Modélisation mathématique et calcul scientifique</li>
+                    <li>Intelligence Artificielle (IA) et Mathématiques</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-        <div class="entry">
-            <h3>THÈME 3: INTELLIGENCE ARTIFICIELLE (IA) ET MATHÉMATIQUES (débutant)</h3>
-            <ul>
-                <li>l'intelligence artificielle (IA): l'intelligence artificielle (IA) et les mathématiques sont des domaines profondément interconnectés...</li>
-            </ul>
-        </div>
-    </section>
-</main>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+    <script src="background.js"></script>
+    <script src="language.js"></script>
+</body>
+</html>

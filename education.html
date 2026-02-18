@@ -1,35 +1,100 @@
-<main class="content">
-    <section id="education">
-        <h2><i class="fas fa-graduation-cap"></i>&nbsp;<span>Formation Académique</span></h2>
-        
-        <div class="education-item">
-            <h3>Doctorat : Mathématiques Appliquées</h3>
-            <p class="date">Déc. 2023</p>
-            <p>ENIT : École Nationale d'Ingénieurs de Tunis et UNICAEN : UFR des sciences – Université de Caen Normandie</p>
-        </div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAYENI Hatem - Formation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile_pic.png" alt="Profile Picture" class="profile-img">
+                <h1><i class="fas fa-id-badge"></i>&nbsp;ZAYENI Hatem</h1>
+                <p>Post-doctorat en Mathématiques Appliquées</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-user"></i>&nbsp;<span>Profil</span></a></li>
+                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i>&nbsp;<span>Formation</span></a></li>
+                    <li><a href="skills.html"><i class="fas fa-cogs"></i>&nbsp;<span>Compétences</span></a></li>
+                    <li><a href="research.html"><i class="fas fa-flask"></i>&nbsp;<span>Recherche</span></a></li>
+                    <li><a href="publications.html"><i class="fas fa-book"></i>&nbsp;<span>Publications</span></a></li>
+                    <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i>&nbsp;<span>Enseignement</span></a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i>&nbsp;<span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="mailto:hatem.zayeni@unicaen.fr" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/hatem1264" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/zayeni-hatem-51ab61101/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=fLQWpKAAAAAJ&hl=fr&oi=ao" target="_blank" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-5217-9618" target="_blank" class="contact-link"><i class="fab fa-orcid"></i> ORCID</a>
+            </div>
+        </aside>
 
-        <div class="education-item">
-            <h3>M2 : Mathématiques </h3>
-            <p class="date">Juin 2020</p>
-            <p>ENIT: École Nationale d'Ingénieurs de Tunis - Modélisation mathématique et calcul scientifique</p>
-        </div>
+        <main class="content">
+            <section id="slideshow" class="slideshow-container">
+                <div class="slide fade">
+                    <img src="Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg">
+                    <div class="text">Les anévrismes intracrâniens</div>
+                </div>
+                <div class="slide fade">
+                    <img src="1756843545146.jpeg">
+                    <div class="text">Glioblastome</div>
+                </div>
+                <div class="slide fade">
+                    <img src="aurelie.png">
+                    <div class="text">Cellule de glioblastome</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
 
-        <div class="education-item">
-            <h3>M1 : Mathématiques Appliquées</h3>
-            <p class="date">Juin 2018</p>
-            <p>FST : Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis</p>
-        </div>
+            <section id="education">
+                <h2><i class="fas fa-graduation-cap"></i>&nbsp;<span>Parcours Académique</span></h2>
+                <div class="entry">
+                    <h3>Doctorat : Mathématiques Appliquées (Mention : Très Honorable)</h3>
+                    <p class="date">Déc. 2023</p>
+                    <p>ENIT : École Nationale d'Ingénieurs de Tunis et UNICAEN : UFR des Sciences – Université de Caen Normandie</p>
+                    <p><strong>Sujet de thèse :</strong> <em>Assimilation de données et complétion de données au bord pour le système de Stokes et applications</em></p>
+                </div>
+                <div class="entry">
+                    <h3>M2 : Mathématiques (Majeure)</h3>
+                    <p class="date">Juin 2020</p>
+                    <p>ENIT : École Nationale d'Ingénieurs de Tunis</p>
+                </div>
+                 <div class="entry">
+                    <h3>Licence : Mathématiques Fondamentales et Appliquées</h3>
+                    <p class="date">Juin 2017</p>
+                    <p>FST : Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-        <div class="education-item">
-            <h3>Licence : Mathématiques Fondamentales et Appliquées</h3>
-            <p class="date">Juin 2017</p>
-            <p>FST : Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis</p>
-        </div>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-        <div class="education-item">
-            <h3>Baccalauréat : S spécialité « sciences mathématiques »</h3>
-            <p class="date">Juin 2013</p>
-            <p>Tunisie</p>
-        </div>
-    </section>
-</main>
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+    <script src="background.js"></script>
+</body>
+</html>

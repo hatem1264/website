@@ -1,14 +1,88 @@
-<main class="content">
-    <section id="contact">
-        <address>
-        <h2><i class="fas fa-envelope-open-text"></i>&nbsp;<span>Contact</span></h2>
-        <p><strong>Courriel :</strong> <a href="mailto:hatem.zayeni@unicaen.fr">hatem.zayeni@unicaen.fr</a> / <a href="mailto:hatem.zayeni@enit.utm.tn">hatem.zayeni@enit.utm.tn</a></p>
-        <p><strong>Téléphone :</strong> +33759896321</p>
-        <p><strong>Adresse :</strong></p>
-            Laboratoire de Mathématiques Nicolas Oresme (LMNO)<br>
-            Département de Mathématiques et Informatique, UFR des Sciences<br>
-            Université de Caen Normandie<br>
-            14032 CAEN cedex 5, France
-        </address>
-    </section>
-</main>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAYENI Hatem - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile_pic.png" alt="Profile Picture" class="profile-img">
+                <h1><i class="fas fa-id-badge"></i>&nbsp;ZAYENI Hatem</h1>
+                <p>Post-doctorat en Mathématiques Appliquées</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-user"></i>&nbsp;<span>Profil</span></a></li>
+                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i>&nbsp;<span>Formation</span></a></li>
+                    <li><a href="skills.html"><i class="fas fa-cogs"></i>&nbsp;<span>Compétences</span></a></li>
+                    <li><a href="research.html"><i class="fas fa-flask"></i>&nbsp;<span>Recherche</span></a></li>
+                    <li><a href="publications.html"><i class="fas fa-book"></i>&nbsp;<span>Publications</span></a></li>
+                    <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i>&nbsp;<span>Enseignement</span></a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i>&nbsp;<span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="mailto:hatem.zayeni@unicaen.fr" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/hatem1264" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/zayeni-hatem-51ab61101/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=fLQWpKAAAAAJ&hl=fr&oi=ao" target="_blank" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-5217-9618" target="_blank" class="contact-link"><i class="fab fa-orcid"></i> ORCID</a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section id="slideshow" class="slideshow-container">
+                <div class="slide fade">
+                    <img src="Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg">
+                    <div class="text">Recherche sur les anévrismes intracrâniens</div>
+                </div>
+                <div class="slide fade">
+                    <img src="echog.jpg">
+                    <div class="text">Analyse d'échographie</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+
+            <section id="contact">
+                <h2><i class="fas fa-envelope-open-text"></i>&nbsp;<span>Contact</span></h2>
+                <p><strong>Courriel :</strong> <a href="mailto:hatem.zayeni@unicaen.fr">hatem.zayeni@unicaen.fr</a></p>
+                <p><strong>Adresse :</strong></p>
+                <address>
+                    Laboratoire de Mathématiques Nicolas Oresme (LMNO)<br>
+                    Département de Mathématiques et Informatique, UFR des Sciences<br>
+                    Université de Caen Normandie<br>
+                    14032 CAEN cedex 5, France
+                </address>
+            </section>
+        </main>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+    <script src="background.js"></script>
+</body>
+</html>

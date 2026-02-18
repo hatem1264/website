@@ -1,109 +1,88 @@
-<main class="content">
-    <section id="teaching">
-        <h2><i class="fas fa-chalkboard-teacher"></i>&nbsp;<span>Activités d'Enseignement</span></h2>
-
-        <div class="entry">
-            <h3>Activités d'enseignement (2024-2025) - S1. (total de 82 heures effectuées)</h3>
-            
-            <div class="course">
-                <h4>Algorithmique</h4>
-                <p>UFR des sciences, Université de Caen Normandie.</p>
-                <p>Licence 2 Maths Info et app. aux Sc. Humaines et Sociales (L2 Miashs S3) - Python</p>
-                <p><strong>TP: volume horaire : 20 heures</strong></p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAYENI Hatem - Enseignement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile_pic.png" alt="Profile Picture" class="profile-img">
+                <h1><i class="fas fa-id-badge"></i>&nbsp;ZAYENI Hatem</h1>
+                <p>Post-doctorat en Mathématiques Appliquées</p>
+            </div>
+            <nav>
                 <ul>
-                    <li>Listes.</li>
-                    <li>Arbres.</li>
-                    <li>Arbres Binaires de Recherche.</li>
-                    <li>Algorithmes de tri.</li>
-                    <li>Tri et complexité.</li>
-                    <li>Graphe orienté.</li>
+                    <li><a href="index.html"><i class="fas fa-user"></i>&nbsp;<span>Profil</span></a></li>
+                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i>&nbsp;<span>Formation</span></a></li>
+                    <li><a href="skills.html"><i class="fas fa-cogs"></i>&nbsp;<span>Compétences</span></a></li>
+                    <li><a href="research.html"><i class="fas fa-flask"></i>&nbsp;<span>Recherche</span></a></li>
+                    <li><a href="publications.html"><i class="fas fa-book"></i>&nbsp;<span>Publications</span></a></li>
+                    <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i>&nbsp;<span>Enseignement</span></a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i>&nbsp;<span>Contact</span></a></li>
                 </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="mailto:hatem.zayeni@unicaen.fr" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/hatem1264" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/zayeni-hatem-51ab61101/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=fLQWpKAAAAAJ&hl=fr&oi=ao" target="_blank" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-5217-9618" target="_blank" class="contact-link"><i class="fab fa-orcid"></i> ORCID</a>
             </div>
+        </aside>
 
-            <div class="course">
-                <h4>Analyse et applications informatiques</h4>
-                <p>UFR des sciences, Université de Caen Normandie.</p>
-                <p>Licence 2 Mathématiques (L2 Maths S3) - Geogebra</p>
-                <p><strong>TP et TD : volume horaire : 22 heures</strong></p>
+        <main class="content">
+            <section id="slideshow" class="slideshow-container">
+                <div class="slide fade">
+                    <img src="Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg">
+                    <div class="text">Recherche sur les anévrismes intracrâniens</div>
+                </div>
+                <div class="slide fade">
+                    <img src="echog.jpg">
+                    <div class="text">Analyse d'échographie</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+
+            <section id="teaching">
+                <h2><i class="fas fa-chalkboard-teacher"></i>&nbsp;<span>Activités d'Enseignement</span></h2>
+                <p>Attaché Temporaire d'Enseignement et de Recherche (A.T.E.R.) à l'Université de Caen-Normandie (2024-2025).</p>
                 <ul>
-                    <li>Continuité uniforme (ou : ”le grand retour des epsilon’s”).</li>
-                    <li>Intégrale de Riemann.</li>
-                    <li>Suite de fonctions.</li>
-                    <li>Courbes paramétrées.</li>
+                    <li>Algorithmique (L2 Miashs)</li>
+                    <li>Analyse et applications informatiques (L2 Maths)</li>
+                    <li>Outils mathématiques (L1 Sciences de la Vie)</li>
+                    <li>Mathématiques appliquées à l'économie et à la gestion (L1 AES)</li>
                 </ul>
-            </div>
+                <p>Expériences passées à l'École Nationale d'Ingénieurs de Tunis (2023-2024).</p>
+            </section>
+        </main>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-            <div class="course">
-                <h4>Outils mathématiques</h4>
-                <p>UFR des sciences, Université de Caen Normandie.</p>
-                <p>Licence 1 Sciences de la Vie (SVIL1201 S1)</p>
-                <p><strong>CM et TD : volume horaire : 20 heures</strong></p>
-                <ul>
-                    <li>Nombres réels, inégalités, valeur absolue.</li>
-                    <li>Etude de fonctions.</li>
-                    <li>Primitives et intégrales.</li>
-                    <li>Systèmes d'équations linéaires.</li>
-                </ul>
-            </div>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-            <div class="course">
-                <h4>Mathématiques appliquées à l’économie et la gestion</h4>
-                <p>UFR Droit, Université de Caen Normandie.</p>
-                <p>Licence 1 Administration Économique et Sociale (AESL1201 S1)</p>
-                <p><strong>TD : volume horaire : 20 heures</strong></p>
-                <ul>
-                    <li>Utiliser des expressions mathématiques pour résoudre des problèmes d’économie et de gestion.</li>
-                    <li>Les ensembles, Les fonctions.</li>
-                    <li>Introduction aux mathématiques financières.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="entry">
-            <h3>Activités d'enseignement (2024-2025) - S2. (total de 110 heures prévues)</h3>
-            
-            <div class="course">
-                <h4>Algèbre 2</h4>
-                <p>UFR des sciences, Université de Caen Normandie.</p>
-                <p>Licence 1 Mathématiques (L1 Maths S2)</p>
-                <p><strong>TD : volume horaire : 50 heures</strong></p>
-            </div>
-
-            <div class="course">
-                <h4>Compléments Maths 4</h4>
-                <p>UFR des sciences, Université de Caen Normandie.</p>
-                <p>Licence 2 PPPE (Parcours préparatoires au professorat des écoles) (L2 MIASHS PPPE S4)</p>
-                <p><strong>25h CM et 35h TD : volume horaire : 60 heures</strong></p>
-            </div>
-        </div>
-
-        <div class="entry">
-            <h3>Activités d'enseignement (2023-2024) (total de 50 heures effectuées)</h3>
-
-            <div class="course">
-                <h4>MP Analyse numérique</h4>
-                <p>École Nationale d'Ingénieurs de Tunis : Janv. 2023 - Mai 2023.</p>
-                <p>Cycle d'ingénierie de première année en modélisation pour l'industrie et les services (MINDS) - Python</p>
-                <p><strong>Volume horaire : 26 heures</strong></p>
-                <ul>
-                    <li>Introduction à l'Analyse Numérique</li>
-                    <li>Méthodes aux différences finies</li>
-                    <li>Implémentation numérique avec python</li>
-                    <li>Mini projet</li>
-                </ul>
-            </div>
-
-            <div class="course">
-                <h4>Problèmes aux limites et analyse fonctionnelle</h4>
-                <p>ENIT : Jan. 2024 - Mai 2024, Python, FEniCS, Gmsh</p>
-                <p>Première année Master en Modélisation Mathématique et Science des Données</p>
-                <p><strong>Volume horaire : 24 heures</strong></p>
-                <ul>
-                    <li>Méthodes des éléments finis (FEM)</li>
-                    <li>Implémentation numérique avec FEniCS</li>
-                    <li>Mini projet</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-</main>
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+    <script src="background.js"></script>
+</body>
+</html>

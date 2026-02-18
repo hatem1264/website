@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAYENI Hatem - Doctorat en Mathématiques Appliquées</title>
+    <title>ZAYENI Hatem - Profil</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap" rel="stylesheet">
@@ -15,12 +15,11 @@
             <div class="profile">
                 <img src="profile_pic.png" alt="Profile Picture" class="profile-img">
                 <h1><i class="fas fa-id-badge"></i>&nbsp;ZAYENI Hatem</h1>
-                <p>Doctorat en Mathématiques Appliquées</p>
+                <p>Post-doctorat en Mathématiques Appliquées</p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i>&nbsp;<span>Accueil</span></a></li>
-                    <li><a href="profile.html"><i class="fas fa-user"></i>&nbsp;<span>Profil</span></a></li>
+                    <li><a href="index.html"><i class="fas fa-user"></i>&nbsp;<span>Profil</span></a></li>
                     <li><a href="education.html"><i class="fas fa-graduation-cap"></i>&nbsp;<span>Formation</span></a></li>
                     <li><a href="skills.html"><i class="fas fa-cogs"></i>&nbsp;<span>Compétences</span></a></li>
                     <li><a href="research.html"><i class="fas fa-flask"></i>&nbsp;<span>Recherche</span></a></li>
@@ -39,32 +38,50 @@
         </aside>
 
         <main class="content">
-            <div id="page-content">
-                <section id="welcome-message">
-                    <h2><i class="fas fa-globe"></i>&nbsp;<span>Bienvenue sur mon site personnel !</span></h2>
-                    <p>Vous trouverez ici des informations sur mes recherches, publications et activités d'enseignement.</p>
-                </section>
+            <section id="slideshow" class="slideshow-container">
+                <div class="slide fade">
+                    <img src="Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg">
+                    <div class="text">Les anévrismes intracrâniens</div>
+                </div>
+                <div class="slide fade">
+                    <img src="1756843545146.jpeg">
+                    <div class="text">Glioblastome</div>
+                </div>
+                <div class="slide fade">
+                    <img src="aurelie.png">
+                    <div class="text">Cellule de glioblastome</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
 
-                <section id="slideshow" class="slideshow-container">
-                    <div class="slide fade">
-                        <img src="Frontiers_DsouzaBrain_BannerImage_1500x650_DSouza-Collage_FINAL.jpg">
-                        <div class="text">Recherche sur les anévrismes intracrâniens</div>
-                    </div>
-                    <div class="slide fade">
-                        <img src="echog.jpg">
-                        <div class="text">Analyse d'échographie</div>
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </section>
-            </div>
-
-            <footer>
-                <p>&copy; 2024 ZAYENI Hatem</p>
-            </footer>
+            <section id="profile">
+                <h2><i class="fas fa-user"></i>&nbsp;<span>Profil Académique et Scientifique</span></h2>
+                <p>Postdoctorant au sein de l’équipe <a href="https://pprime.fr/la-recherche/genie-mecanique-systemes-complexes/photomecanique-analyse-experimentale-en-mecanique-des-solides-pem/" target="_blank">PEM</a> (Photomécanique & analyse Expérimentale en Mécanique des solides) au sein du laboratoire Pprime à l’Université de Poitiers, il travaille dans le cadre du projet ANR InvABio sur le développement de méthodes inverses avancées pour l’identification en biomécanique cellulaire.</p>
+                <p>Ses recherches portent notamment sur la modélisation numérique 3D et l’étude des mécanismes d’invasion tumorale, dans une approche interdisciplinaire mêlant mathématiques appliquées, mécanique numérique et biologie cellulaire.</p>
+                <p>Il poursuit une étude sur le glioblastome, une tumeur cérébrale dont les cellules envahissent leur environnement en formant des invadopodes. Pour identifier les champs mécaniques qui se manifestent durant ce processus invasif, une méthode de complétion de données est utilisée. L’objectif est ici d’étendre cette méthode, la méthode de régularisation évanescente, à des cas en trois dimensions présentant des comportements anisotropes et hétérogènes.</p>
+            </section>
         </main>
     </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
     <script src="background.js"></script>
-    <script src="navigation.js"></script>
 </body>
 </html>
