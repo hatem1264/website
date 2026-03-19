@@ -1,9 +1,9 @@
 /* General styles - GitLab-inspired Dark Theme */
 :root {
-    --bg-color: #1c1c22; /* Dark charcoal/blue background */
-    --fg-color: #e0e0e0; /* Light gray text for readability */
+    --bg-color: rgb(28, 28, 34); /* Dark charcoal/blue background */
+    --fg-color: #ffffff; /* Light gray text for readability */
     --primary-accent: #e67e22; /* Orange for headings */
-    --secondary-accent: #3498db; /* Blue for links */
+    --secondary-accent: #21e0ac; /* Blue for links */
     --border-color: #3c3c44; /* Muted border color */
     --card-bg-color: #282830; /* Slightly lighter card background */
     --mono-font: 'Fira Code', 'Source Code Pro', monospace;
@@ -247,7 +247,7 @@ body {
 
 .content h3 {
     font-family: var(--mono-font);
-    color: #98FB98; /* Mint green */
+    color: #e42cfa; /* Mint green */
 }
 
 .publication {
