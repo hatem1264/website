@@ -1,3 +1,53 @@
+
+
+<div id="counter-container">
+    <span id="user-count">--</span> personnes en ligne
+</div>
+
+<script type="module">
+    // 1. Importation des bibliothèques Firebase
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, ref, onValue, push, onDisconnect, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+    // 2. Votre configuration (à copier depuis la console Firebase)
+    const firebaseConfig = {
+        apiKey: "VOTRE_API_KEY",
+        authDomain: "VOTRE_PROJECT_ID.firebaseapp.com",
+        databaseURL: "https://VOTRE_PROJECT_ID.firebaseio.com",
+        projectId: "VOTRE_PROJECT_ID",
+        storageBucket: "VOTRE_PROJECT_ID.appspot.com",
+        messagingSenderId: "VOTRE_ID",
+        appId: "VOTRE_APP_ID"
+    };
+
+    // 3. Initialisation
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    // 4. Votre logique de compteur
+    document.addEventListener('DOMContentLoaded', () => {
+        const userCountElement = document.getElementById('user-count');
+        const connectionsRef = ref(db, 'connections');
+        const connectedRef = ref(db, '.info/connected');
+
+        onValue(connectedRef, (snap) => {
+            if (snap.val() === true) {
+                const con = push(connectionsRef);
+                onDisconnect(con).remove();
+                con.set(serverTimestamp());
+            }
+        });
+
+        onValue(connectionsRef, (snap) => {
+            const count = snap.numChildren();
+            userCountElement.textContent = count;
+        });
+    });
+</script>
+</body>
+</html>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
